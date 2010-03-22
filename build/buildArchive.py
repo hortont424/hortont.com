@@ -12,12 +12,12 @@ from settings import *
 
 def paginate(posts):
     pages = []
-    
+
     def _paginate(posts):
         if len(posts) > 0:
             pages.append([renderPost(f, "archive-post") for f in posts[0:page_size]])
             _paginate(posts[page_size:])
-    
+
     _paginate(posts)
     return pages
 
@@ -37,24 +37,24 @@ def generateArchive(posts, outputLocation, category=None):
     page_no = 1
     posts.sort()
     posts.reverse()
-    
+
     pages = paginate(posts)
-    
+
     for pagination in pages:
         previousPageName = nextPageName = ""
-        
+
         if page_no != 1:
             previousPageName = filenameForPage(page_no - 1)
-        
+
         if page_no != len(pages):
             nextPageName = filenameForPage(page_no + 1)
-        
+
         page = outputArchivePage(pagination, nextPageName, previousPageName, category)
         outputFilename = os.path.join(outputLocation, filenameForPage(page_no))
-        
+
         if not os.path.exists(os.path.dirname(outputFilename)):
             os.makedirs(os.path.dirname(outputFilename))
-        
+
         out = codecs.open(outputFilename, encoding='utf-8', mode='w+')
         out.write(page.decode("utf-8", "ignore"))
         out.close()

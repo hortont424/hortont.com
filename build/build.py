@@ -20,23 +20,22 @@ def buildBackwardsCompatibilityLinks(type):
             f = os.path.join(root, filename)
             if not f.endswith(".control"):
                 continue
-            
+
             metadata = json.loads(readFileContents(f), encoding='utf-8')
-            
+
             if "post-name" not in metadata:
                 continue
-            
+
             ourDate = datetime.datetime.strptime(metadata["date"], "%Y.%m.%d %H:%M:%S").strftime("%Y/%m") # TODO: fixed slash
             outputFolder = os.path.join("output", blog_dir, ourDate, metadata["post-name"])
-            
+
             if not os.path.exists(outputFolder):
                 os.makedirs(outputFolder)
-            
-            outputFile = os.path.join(outputFolder, ".htaccess")
+
+            outputFile = os.path.join(outputFolder, ".redirect")
             realURL = os.path.join(blog_prefix, "posts", f.replace(".control", ".html").replace("posts" + "/", ""))
-            htaccessContents = "RewriteEngine on\n" + "RewriteRule ^.*$ " + realURL + "\n"
             out = codecs.open(outputFile, mode="w+")
-            out.write(htaccessContents)
+            out.write(realURL)
             out.close()
 
 def generateCategoryMap(type):
@@ -46,12 +45,12 @@ def generateCategoryMap(type):
             f = os.path.join(root, filename)
             if not f.endswith(".control"):
                 continue
-            
+
             metadata = json.loads(readFileContents(f), encoding='utf-8')
-            
+
             if "categories" not in metadata:
                 continue
-            
+
             for cat in metadata["categories"]:
                 if cat not in posts:
                     posts[cat] = []
