@@ -1,3 +1,5 @@
+Or, <em>How I Baked My 400$ Logic Board In An Oven For Ten Minutes And Successfully Repaired It</em>...
+
 <strong>Take One</strong>
 
 On one day nearly two years ago, one year after I'd acquired my current MacBook Pro, Kaylee, I <a href="http://www.hortont.com/blog/2008/06/macbook-pro-santa-rosa-a-fatal-flaw/">opened the lid to a black screen</a>. A black screen which <em>stayed</em> black, no matter what I tried to do. It was booting, though &mdash; using ioreg over ssh, I determined that it thought my video card (the now-somewhat-aging but still powerful NVIDIA 8600M) had suddenly become an integrated Intel X3100 &mdash; something which, barring the existence of gremlins or elves, had certainly not happened.
