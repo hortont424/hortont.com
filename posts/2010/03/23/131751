@@ -1,0 +1,25 @@
+<strong>Take One</strong>
+
+On one day nearly two years ago, one year after I'd acquired my current MacBook Pro, Kaylee, I <a href="http://www.hortont.com/blog/2008/06/macbook-pro-santa-rosa-a-fatal-flaw/">opened the lid to a black screen</a>. A black screen which <em>stayed</em> black, no matter what I tried to do. It was booting, though &mdash; using ioreg over ssh, I determined that it thought my video card (the now-somewhat-aging but still powerful NVIDIA 8600M) had suddenly become an integrated Intel X3100 &mdash; something which, barring the existence of gremlins or elves, had certainly not happened.
+
+At that point, few people had heard of the NVIDIA 8-series solder failures. Approximately a week after my machine died, NVIDIA took a 150 million dollar hit to predicted revenue for that quarter to cover the fact that some of their mobile GPU lines were failing at "higher than usual" rates. Some people today believe that the entire 8-series was affected, even the desktop chips, but that the mobile chips failed at far greater rates because of the inherently more unfortunate thermal conditions within a laptop. It turned out that some of the solder connecting the GPU to the motherboard (or to the discrete card, in the case of the desktop chips) was of poor quality, developing cracks over time with repeated heating and cooling cycles.
+
+I took my machine to Small Dog Electronics, who subsequently sent it to Apple for a logic board replacement. This was before Apple knew what was going on; before (almost a year, actually) the repair program was in place, so I convinced my parents (thanks, again!) to pay for the repairs.
+
+<strong>Take Two</strong>
+
+Fast forward to Saturday; almost two years after the first failure. Wake up Kaylee, no backlight. Power off, try again. Black screen, no backlight, but the disk sounds like it's booting just fine. I eventually managed to enable SSH (by pulling the disk out and attaching it to another machine) and noted that &mdash; once again &mdash; my video card reported itself as a Intel X3100. Grr...
+
+This time around, I didn't really see repair as an option. While Apple now has a free repair program for this problem, I've beat my machine far beyond the point where any sane company would accept it for repairs even if I were to <em>throw</em> money at them. I didn't bother to even try. Besides, I'm really just waiting for new models and then I'm going to replace it, so it's hard to justify much effort to keep this machine alive.
+
+On Sunday I stripped the MacBook Pro down, disconnecting everything from the motherboard, removing it, applying heat from a hairdryer and massaging the GPU... I figured, at this point, I've got nothing to lose, so I'll try it. I had to reapply thermal paste and reattach the heatsink, all that fun stuff. After reconnecting everything, no dice. I offered bits and pieces to other people (battery and memory are still useful), and put Kaylee in a box.
+
+<img src="http://files.hortont.com/nvidia-mbp-gpu.jpg" />
+
+Monday rolled around, and my father pointed out that BGA solder doesn't actually melt at a temperature that you can achieve with a hairdryer, but that an oven at around 400&deg;F should do it... so I decided that I'd try that as a last-ditch attempt.
+
+Strip the machine back down, remove the motherboard again, throw it in the oven at 380&deg;F for 10 minutes, wrapped in aluminum foil except for a small hole above the GPU.
+
+Put it all back together, turn it on. The power light <em>blinks</em>... that's not right! I eventually realized that I forgot to put the RAM back in. Fix that, hit the power button again... <strong>GRAY SCREEN</strong>! And it booted, happily.
+
+I still don't believe it worked &mdash; it's by far the most incredible and amazing repair I've ever performed, and I'm incredibly happy that it both didn't melt the CPU and actually managed to fix the GPU (I'm sitting here waiting for class to start, typing away on Kaylee...).
