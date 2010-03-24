@@ -42,6 +42,6 @@ check-links:
 push:
 	rm -rf /tmp/hortont.com
 	cd /tmp ; git clone git@github.com:hortont424/hortont.com
-	cd /tmp/hortont.com ; make ; s3sync -r --progress -v --make-dirs -p /tmp/hortont.com/output/ files.hortont.com:www
+	cd /tmp/hortont.com ; make ; s3sync -r --progress -v --make-dirs --cache-control="no-cache" -p /tmp/hortont.com/output/ files.hortont.com:www
 
 .PHONY: all clean copy-data push all-serial

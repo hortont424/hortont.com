@@ -8,7 +8,7 @@ At that point, few people had heard of the NVIDIA 8-series solder failures. Appr
 
 I took my machine to Small Dog Electronics, who subsequently sent it to Apple for a logic board replacement. This was before Apple knew what was going on; before (almost a year, actually) the repair program was in place, so I convinced my parents (thanks, again!) to pay for the repairs.
 
-<strong>Take Two</strong>
+<strong>Take Two </strong>
 
 Fast forward to Saturday; almost two years after the first failure. Wake up Kaylee, no backlight. Power off, try again. Black screen, no backlight, but the disk sounds like it's booting just fine. I eventually managed to enable SSH (by pulling the disk out and attaching it to another machine) and noted that &mdash; once again &mdash; my video card reported itself as a Intel X3100. Grr...
 
