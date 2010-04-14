@@ -3,6 +3,10 @@
 {
     opacity: 1.0 !important;
 }
+a.project
+{
+    font-weight: bold;
+}
 </style>
 <h1>Typography</h1>
 <p>
