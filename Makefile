@@ -42,6 +42,6 @@ check-links:
 push:
 	rm -rf /tmp/hortont.com
 	cd /tmp ; git clone git@github.com:hortont424/hortont.com
-	cd /tmp/hortont.com ; make ; rsync -a --progress /tmp/hortont.com/output/ asdfaoeuarst.com:/srv/www
+	cd /tmp/hortont.com ; make ; rsync -a --progress /tmp/hortont.com/output/ hortont.com:/srv/www
 
 .PHONY: all clean copy-data push all-serial
