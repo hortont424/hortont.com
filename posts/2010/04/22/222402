@@ -1,0 +1,29 @@
+It's no secret that my main machine, Kaylee, has been dying for quite some time. Between being bitten (for a second time) by the NVidia 8-series solder failure (which I've temporarily remedied by <a href="http://www.hortont.com/blog/posts/2010/03/23/131751.html">baking the logic board</a>) and simple wear and tear from being beat on for many hours a day for the past almost-3 years, there wasn't much of a life left for that poor machine. I wrote a little bit about the various problems (and the many wonderful things we've been through)<a href="http://www.hortont.com/blog/posts/2010/01/15/032827.html">a few months ago</a>, when I thought a replacement would be coming soon.
+
+It took a <em>bit</em> longer than expected for Apple to launch Arrandale-based laptops, but they finally did, last Tuesday. Matt and I both ordered one on launch day; Matt to replace his RPI-issue ThinkPad, and myself to replace Kaylee.
+
+I'm happy to report that I'm typing this on a shiny new black-and-silver keyboard: my new machine got here today! It's just as fast as I was hoping, between the Core i7 CPU and the Intel SSD that I installed in the optical drive bay and which is hosting my root partition!
+
+<img src="http://files.hortont.com/zoe/family.jpg">
+
+I used the "Remote Install Mac OS X" tool that came out around the introduction of the MacBook Air to install (since I no longer have an optical drive in the machine)... it's definitely the slickest NetBoot interface I've seen; very cute!
+
+<img src="http://files.hortont.com/zoe/zoe.jpg">
+
+And as for the name? Zoe, of course, keeping in the general naming trend (sci-fi characters, girls for Macs and guys for PCs). Zoe is the last (and second) of the Firefly girls who isn't either "Inara" (which doesn't roll off the tongue as well) or <em>reeking of insanity and instability</em> (River). So this is the end of the Firefly names, unless I get another PC before a Mac ("Mal! bad, from the Latin"). Luckily, <em>Zoe</em> provides an excellent jumping point into another (much larger) sci-fi universe:
+
+<img src="http://files.hortont.com/zoe/caprica.jpg">
+
+This is a really bizarre picture (what in god's name is that thing on Daniel's face?) of part of the casts of Caprica and the recent reimagining of Battlestar Galactica.
+
+In any case, Zoe Washburne, Zoe Greystone, let's say it's named after both!
+
+<img src="http://files.hortont.com/zoe/meet.jpg">
+
+Kaylee and Zoe meeting for the first time, this morning.
+
+<img src="http://files.hortont.com/zoe/ssd.jpg">
+
+I got a 160 GB Intel SSD, and installed it in the optical drive bay. It's incredibly fast (<em>incredibly</em>; random read benches at something like 60x the speed of <em>Jayne's</em> disks, and more like 100x Kaylee's), and hosts my root partition, all of my applications, settings, things like that. It's incredibly rare that you get numbers like <em>sixty times</em> anywhere in the computing world, so I'm excited! I'm keeping my photos, music, and documents on the 500 GB magnetic disk that came with the machine (which also seems to be quite snappy as far as laptop hard drives go), since there's not nearly enough space on the root disk.
+
+That's all I have to say for now. I'll definitely be back with more thoughts, after I've had a few days to play around.
