@@ -4,7 +4,7 @@ I didn't get started as early as I perhaps should have, mostly because I have ot
 
 Of course, there was no way anyone was going to get me to sit in a room with FontLab for hours on end (it's a horrible program), so I had to come up with something different to do, to make it an interesting project. I eventually decided to try a somewhat different approach: a procedurally-generated font.
 
-Horton Slab (and its sans-serif variant, which you won't see here today) is implemented in Python; each glyph is a separate class with knowledge of its properties, and constructs its geometry from this knowledge.
+Horton Slab (and its sans-serif variant, which you won't see here today) is implemented in Python; each glyph is a separate class with knowledge of its properties, and constructs its geometry from this knowledge. This means that &mdash; given enough care &mdash; you can automatically generate quite reasonable alternative faces (at different weights, with italics, with or without serifs, etc), reducing design time significantly.
 
 Most of the ratios in the font are derived from phi, the golden ratio. The ratio of cap-height to x-height, serif thickness to stem thickness, height of the crossbar in A, E, F, G, H, etc. to the cap-height, the depth of the middle of M, and many, many other things. This isn't as strict as it could be, but I sometimes sacrificed phi-ness (the original guiding design property) for readability or beauty.
 
