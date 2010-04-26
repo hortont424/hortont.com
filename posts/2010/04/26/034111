@@ -6,7 +6,11 @@ Of course, there was no way anyone was going to get me to sit in a room with Fon
 
 Horton Slab (and its sans-serif variant, which you won't see here today) is implemented in Python; each glyph is a separate class with knowledge of its properties, and constructs its geometry from this knowledge.
 
+Most of the ratios in the font are derived from phi, the golden ratio. The ratio of cap-height to x-height, serif thickness to stem thickness, height of the crossbar in A, E, F, G, H, etc. to the cap-height, the depth of the middle of M, and many, many other things. This isn't as strict as it could be, but I sometimes sacrificed phi-ness (the original guiding design property) for readability or beauty.
+
 I also implemented a relatively primitive layout engine and an autokerner. There are only a few entries in my kerning overrides table (something like 10) &mdash; it turns out that a very simple approach to optical kerning actually works somewhat well.
+
+All of the code is available <a href="http://github.com/hortont424/phiface">on GitHub</a> as always, and under a BSD license.
 
 Everything you see below was designed in a silly XML-based markup that my layout engine accepts, and clicking on them will open the straight-out-of-engine PDF.
 
