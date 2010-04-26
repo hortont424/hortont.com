@@ -1,0 +1,25 @@
+I've spent the last almost-exactly-one week working on my final project for Typography. During the first class, back in January, I decided that I'd try to put together a font for my final project.
+
+I didn't get started as early as I perhaps should have, mostly because I have other final projects I've been working on all semester, so I decided to take this last week off from other projects and just concentrate on this.
+
+Of course, there was no way anyone was going to get me to sit in a room with FontLab for hours on end (it's a horrible program), so I had to come up with something different to do, to make it an interesting project. I eventually decided to try a somewhat different approach: a procedurally-generated font.
+
+Horton Slab (and its sans-serif variant, which you won't see here today) is implemented in Python; each glyph is a separate class with knowledge of its properties, and constructs its geometry from this knowledge.
+
+I also implemented a relatively primitive layout engine and an autokerner. There are only a few entries in my kerning overrides table (something like 10) &mdash; it turns out that a very simple approach to optical kerning actually works somewhat well.
+
+Everything you see below was designed in a silly XML-based markup that my layout engine accepts, and clicking on them will open the straight-out-of-engine PDF.
+
+<a href="http://files.hortont.com/projects/phiface/title.pdf"><img src="http://files.hortont.com/projects/phiface/title.png" /></a>
+
+All of the glyphs I have at the moment:
+
+<a href="http://files.hortont.com/projects/phiface/glyphs.pdf"><img src="http://files.hortont.com/projects/phiface/glyphs.png" /></a>
+
+Some pseudo-Latin filler text:
+
+<a href="http://files.hortont.com/projects/phiface/latin.pdf"><img src="http://files.hortont.com/projects/phiface/latin.png" /></a>
+
+And a classic Sagan quote:
+
+<a href="http://files.hortont.com/projects/phiface/pbd.pdf"><img src="http://files.hortont.com/projects/phiface/pbd.png" /></a>
