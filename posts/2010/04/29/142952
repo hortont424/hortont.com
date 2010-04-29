@@ -14,7 +14,7 @@ It's showing approximately a 20x speedup, moving from Zoe's CPU to GPU (Core i7 
 
 Eventually (soon), I'm going to make an animation with it, and then it's time to write a paper!
 
-<b>Particles</h>
+<b>Particles</b>
 
 For Advanced Computer Graphics, I've been working on a <a href="http://github.com/hortont424/particles">particle system simulator</a> that uses (surprise!) OpenCL to simulate tons and tons of particles at once (millions, anyway). And render them, attractively (the renderer is still in its infancy). And it comes with a tool to design them, too (also incomplete).
 
