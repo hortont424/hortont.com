@@ -1,0 +1,23 @@
+Two days ago, I received what ended up receiving an email which detailed what I believe to be the single most coincidental and epically ridiculous bug I will ever manage (I hope) to contribute to this world.
+
+It turns out (as Mr. German-person so <em>politely</em> detailed) that the <strong>very</strong> simple random pattern generator that Robb and I implemented for Lights Off generates an "offensive" pattern at some point.
+
+Now I won't go off on a tirade about how insane it is that someone can be offended by a 5x5 grid of lights, nor how it might actually be <em>illegal</em> to display said grid of lights in at least three countries, nor how the pattern that Lights Off was generating is actually <em>completely</em> different from the pattern that this person stated it was, and actually approximates an ancient symbol for peace (or good luck, or some such). Those are components of the human condition which mostly just serve to infuriate me, so I'll leave them alone.
+
+What's important to note here is that <strong>the generation of the pattern is not the epic part of this bug</strong>. The fact that the level number which contained this pattern happens to <em>also</em> be a number often used as an identifying code within (despicable) groups of people who subscribe to the worldview symbolized by the "offensive" symbol... <em>that</em> is truly incredible.
+
+That's also what made my fabulous new friend quite positive that I was one of those people.
+
+Which I most certainly am not.
+
+You can be assured he got an earful. Well... inbox-full.
+
+I promise I was polite.
+
+Sort-of.
+
+In any case, he replied with a very polite, very over-apologetic response, even retracting his request that the "bug" be fixed. I fixed it anyway, as a side-effect of applying a patch that someone else wrote to improve the level generation algorithm (and make it significantly more complex).
+
+If you're really interested in being "offended" (and you have to promise me that you won't take it out on me, I promise it's all totally random — you can inspect the source if you want!), you can start up Lucid, install lights-off, and go to level 88 (this will be fixed in GNOME 2.32, which will be in Maverick). Or, click <a href="http://files.hortont.com/lightsoff-s.png">here</a>.
+
+It's just <em>not</em> reasonable.
