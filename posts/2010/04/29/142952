@@ -26,7 +26,7 @@ And a video (which will only work if you're using a very recent Chrome or Safari
 
 It also turns out that the overhead of OpenCL isn't worth it for simple forces; it significantly speeds up complex (O(n^2)) forces like gravity (I'm aware of many ways to speed up n-body simulation, I just haven't had a chance to implement them yet), but for O(n) forces like below, it really only provides a tiny-to-near-zero gain.
 
-<video src="http://files.hortont.com/particles/simple.mov" controls="controls" width="600px">
+<video src="http://files.hortont.com/particles/simple.mov" controls="controls" width="600px"></video>
 
 <b>Sheeple</b>
 
