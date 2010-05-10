@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="${staticurl}styles/blog.css" type="text/css" />
 
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="${rssurl}" />
-    
+
     <style>
         #blog
         {
@@ -18,10 +18,10 @@
   </head>
   <body class="index">
     <xi:include href="button-bar.html" />
-    
+
     <py:if test="nextPage != ''"><div class="navwrapperl"><a class="nav" href="${nextPage}" title="Older Posts">&larr;</a></div></py:if>
     <py:if test="previousPage != ''"><div class="navwrapperr"><a class="nav" href="${previousPage}" title="Newer Posts">&rarr;</a></div></py:if>
-    
+
     <table id="posts" border="0" width="100%">
     <py:if test="showTitle">
     <tr>
@@ -41,4 +41,14 @@
     </tr>
     </table>
   </body>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+  var pageTracker = _gat._getTracker("UA-86821-5");
+  pageTracker._setDomainName(".hortont.com");
+  pageTracker._trackPageview();
+  } catch(err) {}</script>
 </html>
