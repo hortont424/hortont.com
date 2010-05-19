@@ -119,3 +119,15 @@ td.button
 {
     background: transparent url(${staticurl}images/buttonbar/planet-small.png) -2px -2px no-repeat;
 }
+
+pre
+{
+    font-family: 'Inconsolata', 'Droid Sans Mono', 'Courier New', monospace;
+    font-size: 1.2em;
+    padding: 1em 0.5em;
+    border: 1px solid #ddd;
+    margin: 0px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
