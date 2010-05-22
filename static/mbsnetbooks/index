@@ -1,0 +1,67 @@
+<h1>CSD Windows 7 'sysprep' &amp; MBS Netbook Notes</h1>
+<p>
+The below is a relatively disjoint rant about what we did over the course of the past two days (May 20/21, 2010) to get the new Windows 7 edition of sysprep working in order to properly Ghost and setup 22 Dell Mini 10 netbooks at MBS. If you're here because you're doing the same, good luck.
+
+<b>On Sysprep</b>
+
+The Windows Automated Installation Kit (download link is down in "Useful Files") is useful here. Download it, burn a copy onto a DVD, install it on a machine you're comfortable using. It can be any machine, but preferably one with a CD drive.
+
+<img src="http://files.hortont.com/mbsnetbooks/sim.gif" />
+
+You want to run the "Windows System Image Manager" tool. You should see a UI similar to the above image; ignore the "Distribution Share" and "Messages" panes; the other three panes are where all the action is. Insert a real Windows 7 DVD into your drive, then right click on the item at the top of the bottom right pane ("Windows Image" in the image above). Navigate to your Windows 7 DVD in the file browser that appears, finding the file "sources/install_windows 7 professional.clg" and selecting it. You should now see a bunch of stuff load there. Expand the "Components" item in the Windows Image pane, and see lots of components!
+
+Each of these components is a part of the install that can be customized. Each component can also be customized at different points in the install (and <em>what</em> you can customize changes depending on what part of the install you choose to place it in).
+
+The basic idea with the install stages is that a small set of stages run <em>before</em> you make the Ghost image, which enable the out-of-box OEM installer and make the machine a very generic setup, with very few settings (for example, unsetting the computer's name, removing it from the domain, etc.). These are all of the stages (which you can see in the Answer File pane) up through (and including) <strong>generalize</strong>. The remainder of the stages are run <em>individually</em> on each machine after it's been imaged and booted for the first time.
+
+You can drag components from the Windows Image pane to the Answer File pane, dropping them on the part of the install you want to customize. Follow our file for a reasonable idea of where to drop the settings we care about (you'd be better off starting out with our file and just changing a few things from there, though, I think...); they were mostly chosen by guess-and-check (alternatively, Google is your friend!, and you can ignore audiSystem, auditUser, and offlineServicing, those aren't the right choice, most likely). The properties can then be set in the Properties pane.
+
+Google. Is. Your. Friend.
+
+The sysprep answers file that we created for MBS's Windows 7 netbooks (the Dell Mini 10s) is <a href="http://files.hortont.com/mbsnetbooks/mini10.xml">here</a>. Passwords and CD keys have been removed, you'll have to fill them back in, <em>carefully</em>. (or, find the file with them still in place in <em>Support/Ghost/Ghost 2.5.1/newsysprep</em>) The CD key goes two places:
+<ul>
+    <li>windowsPE/Microsoft-Windows-Setup/UserData/ProductKey</li>
+    <li>oobeSystem/Microsoft-Windows-Shell-Setup/FirstLogonCommands/SynchronousCommand[order=1]/Commandline (at the end of the command line)</li>
+</ul>
+Passwords go in various places:
+<ul>
+    <li>oobeSystem/UserAccounts/AdministratorPassword (local machine's Administrator account password)</li>
+    <li>oobeSystem/UserAccounts/LocalAccounts/LocalAccount[name=supervisor] (local machine's supervisor account password)</li>
+    <li>oobeSystem/AutoLogon/Password (local machine's Administrator account password)</li>
+</ul>
+<b>Useful Files</b>
+<ul>
+    <li>The <a href="http://www.microsoft.com/downloads/details.aspx?familyid=696DD665-9F76-4177-A811-39C26D3B3B34&displaylang=en">Windows Automated Installation Kit</a> is vital to the process, as it includes the answers file editor. Download it, pop in a blank DVD (won't fit on a CD), right click (on a Windows 7 machine), and click "Burn image to disc" (on XP, you'll have to find a different tool to burn ISO images, you're on your own). MBS theoretically has a copy of this CD if you need it.</li>
+    <li>It's 2010. Video drivers are nice. The GMA500 drivers (for the Dell Mini 10) are theoretically available <a href="http://support.dell.com/support/downloads/download.aspx?c=us&l=en&s=gen&releaseid=R201458&SystemID=INSPIRON1210&servicetag=&os=WLH&osl=en&deviceid=18334&devlib=0&typecnt=0&vercnt=1&catid=-1&impid=-1&formatcnt=0&libid=6&typeid=-1&dateid=-1&formatid=-1&source=-1&fileid=279795">here</a>. Don't be scared away by the different model numbers (945/965) in the description; Intel went crazy with the naming for Poulsbo. I had trouble downloading this file on the school machines, so there's a mirror up <a href="http://files.hortont.com/mbsnetbooks/gma500-mini10.exe">here</a>, which is up-to-date as of May 22, 2010 (yell at me if there's a newer version, I'll update this).</li>
+</ul>
+<b>The General Process</b>
+<ol>
+    <li>Make a sysprep answers file (more on this later). Ours is called mini10.xml.</li>
+    <li>Copy the sysprep answers file and newprepit.bat (found in <em>Support/Ghost/Ghost 2.5.1/newsysprep</em>) to C:\Windows\System32\sysprep (this folder will already exist)</li>
+    <li>If your answers file isn't called mini10.xml, adjust the filename in newprepit.bat (open it in Notepad, etc.)</li>
+    <li>Log in to the local Administrator account, and delete any extraneous accounts on the machine (everything except Administrator)</li>
+    <li>Navigate to C:\Windows\System32\sysprep, double click newprepit.bat, and wait. This will re-enable the out-of-box OEM installer, with our custom settings. The machine will automatically shut down.</li>
+    <li><strong>Do not boot the machine again until you've taken a ghost image!</strong></li>
+    <li>Take the Ghost image, just like always.</li>
+    <li>Boot up the machine you just made, see if things look correct (according to steps 9+). If they don't, return to step 1 and adjust your file. You can re-sysprep a single machine <em>as many times as necessary</em> to get things right. If you're just starting, don't even bother making the Ghost image each time, just keep rebooting the machine that you're using while you iteratively develop the correct answers file.</li>
+    <li>Write the Ghost image to a bunch of machines, just like always. You might get unusual errors, it seems like something is up with 2.5.1; just continue through them, everything will be <em>fine</em>!</li>
+    <li>Boot all of the machines; this process will take a long time. <strong>Make sure the machine is plugged into the network for the entirety of the following process!</strong>.</li>
+    <li>Eventually, each machine will ask for a computer name. Enter the name you've assigned, and then continue.</li>
+    <li>The machine will now autologin as the local Administrator (this only happens <em>once</em>, during this first boot)</li>
+    <li>Next, enter the CSD\sysprep account's password when prompted (the username will already be filled out). Ask around if you don't know what it is... or use our answers file! (it's encrypted in the file, so you won't be able to read it straight back out). This is <em>key</em>, as this is where the machine is being added to the Windows Domain. If you watch the terminal that appears closely, you'll see colored text flash by. Yellow is good, red is <em>bad</em>, and means you'll have to add it to the domain manually (either it doesn't have a network connection, you typed the password wrong, or something else is broken... you don't get a second chance, in any case).</li>
+    <li>The machine will automatically reboot, and should be at the login window, ready to go.</li>
+    <li>Log in as a user <strong>in the CSD domain</strong> (CSD\someone) (this is important, as the machine must have global CSD16 internet credentials, or the activation will fail, and it won't give any indication as to why!) who also has admin rights, open the start menu, right click on Computer, go to Properties, scroll to the bottom of the window, click "Activate Now", and go through with the activation. You won't need to enter the serial number, as that's stored in the sysprep answers file, you just need to do the activation. We'll talk about why later.</li>
+</ol>
+<b>Issues With Our Approach</b>
+<ul>
+    <li>The biggest problem with our answers file is that activation isn't performed automatically. Here's why: activation requires an internet connection, but doesn't prompt for credentials if it doesn't have a connection. We're not on the domain until after we add ourselves (which happens automatically, when you're prompted for the sysprep user's password, in step 13), which requires a reboot before it takes effect. We can only do stuff on the <em>first</em> boot, unfortunately (or all boots, but that's not useful!), so on the second boot, when we actually have a proper internet connection, we can't run the activation script. This should be solved someday, but I don't know how to solve it... at least not in the two days I had to solve this.</li>
+</ul>
+<b>Interesting Things in the Sysprep File</b>
+
+There are a few things you might want to adjust in your sysprep answers file. Using the tool mentioned near the top of this post, you could change a few things:
+<ul>
+    <li>The Windows CD Key, locations listed at the top of the file</li>
+    <li>The Administrator/supervisor passwords, locations listed at the top of the file</li>
+    <li>The display settings, in specialize/Microsoft-Windows-Shell-Setup/Display</li>
+</ul>
+</p>
