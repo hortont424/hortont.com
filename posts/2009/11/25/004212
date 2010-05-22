@@ -9,16 +9,12 @@ Each camera takes a picture once a minute. To achieve this, the D80 (which doesn
 The general flow of photos from the D80 to Final Cut follows something like the following:
 
 <ul type="none">
-    <li><strong>a)</strong> <pre>gphoto2</pre> instructs the camera to take a picture (every 60 seconds).
-        <ul type="none">
-            <li><pre>gphoto2 --capture-image-and-download --filename "%Y%m%d%H%M%S.nef" -I 60</pre></li>
-        </ul>
+    <li><strong>a)</strong> <b>gphoto2</b> instructs the camera to take a picture (every 60 seconds).
+    <pre>gphoto2 --capture-image-and-download --filename "%Y%m%d%H%M%S.nef" -I 60</pre>
     </li>
-    <li><strong>b)</strong> The photo is taken, saved to the SD card, then immediately copied to the 160GB hard drive (by <pre>gphoto2</pre>) and deleted from the camera.</li>
-    <li><strong>c)</strong> Cron runs a script every hour that <pre>rsync</pre>s the photos to a large (2TB) pool of storage on Jayne (I manually check occasionally to make sure that the 160GB drive isn't running out of space, and remove the copied pictures when it is; I haven't made this automatic simply as an extra layer of backup in case something goes bad).
-        <ul type="none">
-            <li><pre>rsync -a /home/hortont/timelapse jayne.hortont.com:Backups/</pre></li>
-        </ul>
+    <li><strong>b)</strong> The photo is taken, saved to the SD card, then immediately copied to the 160GB hard drive (by <b>gphoto2</b>) and deleted from the camera.</li>
+    <li><strong>c)</strong> Cron runs a script every hour that <b>rsync</b>s the photos to a large (2TB) pool of storage on Jayne (I manually check occasionally to make sure that the 160GB drive isn't running out of space, and remove the copied pictures when it is; I haven't made this automatic simply as an extra layer of backup in case something goes bad).
+    <pre>rsync -a /home/hortont/timelapse jayne.hortont.com:Backups/</pre>
     </li>
     <li><strong>d)</strong> Every few hours (or more often, if I'm bored), I use Adobe Camera Raw to render the most recent NEFs (still on Jayne, over the network) into a bunch of JPEGs on Kaylee's disk, fixing saturation and contrast problems on the way, as well as setting a reasonable white balance.</li>
     <li><strong>e)</strong> I then use Quicktime 7 (damnit, Apple, fix Quicktime X!) to render the image sequence to 720p H.264 &mdash; this is just for observation, not for editing. I watch the video a few times, show it to people, etc.</li>
