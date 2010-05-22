@@ -1,6 +1,6 @@
 <h1>CSD Windows 7 'sysprep' &amp; MBS Netbook Notes</h1>
 <p>
-The below is a relatively disjoint rant about what we did over the course of the past two days (May 20/21, 2010) to get the new Windows 7 edition of sysprep working in order to properly Ghost and setup 22 Dell Mini 10 netbooks at MBS. If you're here because you're doing the same, good luck.
+The below is a relatively disjoint rant about what we did over the course of the past two days (May 20/21, 2010) to get the new Windows 7 edition of sysprep working in order to properly Ghost and setup 22 Dell Mini 10 netbooks at MBS. If you're here because you're doing the same, good luck. You're free to <a href="mailto:hortont424@gmail.com">email me</a>, but I won't likely be much help, as I don't actually ever use Windows...
 
 <a href="http://www.flickr.com/photos/hortont/4627878878/sizes/l/"><img src="http://farm5.static.flickr.com/4043/4627878878_edd49455fe.jpg" /></a>
 
@@ -66,4 +66,7 @@ There are a few things you might want to adjust in your sysprep answers file. Us
     <li>The Administrator/supervisor passwords, locations listed at the top of the file</li>
     <li>The display settings, in specialize/Microsoft-Windows-Shell-Setup/Display</li>
 </ul>
+<b>Other Stuff</b>
+
+If you stack Mini 10s like we do in the image above, you should note that the magnetic latch sensor can trigger accidentally, causing it to appear like the display is either broken or flaky. Don't freak out, just move the machine a few inches.
 </p>
