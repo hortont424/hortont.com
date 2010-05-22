@@ -11,7 +11,7 @@ The below is a relatively disjointed rant about what we did over the course of t
 </ul>
 <b>On Sysprep</b>
 
-The Windows Automated Installation Kit (download link is down in "Useful Files") is useful here. Download it, burn a copy onto a DVD, install it on a machine you're comfortable using. It can be any machine, but preferably one with a CD drive.
+The Windows Automated Installation Kit (download link is up in "Useful Files") is useful here. Download it, burn a copy onto a DVD, install it on a machine you're comfortable using. It can be any machine, but preferably one with a CD drive.
 
 <img src="http://files.hortont.com/mbsnetbooks/sim.gif" />
 
@@ -47,7 +47,7 @@ Passwords go in various places:
     <li>Take the Ghost image, just like always.</li>
     <li>Boot up the machine you just made, see if things look correct (according to steps 9+). If they don't, return to step 1 and adjust your file. You can re-sysprep a single machine <em>as many times as necessary</em> to get things right. If you're just starting, don't even bother making the Ghost image each time, just keep rebooting the machine that you're using while you iteratively develop the correct answers file.</li>
     <li>Write the Ghost image to a bunch of machines, just like always. You might get unusual errors, it seems like something is up with 2.5.1; just continue through them, everything will be <em>fine</em>!</li>
-    <li>Boot all of the machines; this process will take a long time. <strong>Make sure the machine is plugged into the network for the entirety of the following process!</strong>.</li>
+    <li>Boot all of the machines; this process will take a long time. <strong>Make sure the machine is plugged into the network for the entirety of the following process!</strong></li>
     <li>Eventually, each machine will ask for a computer name. Enter the name you've assigned, and then continue.</li>
     <li>The machine will now autologin as the local Administrator (this only happens <em>once</em>, during this first boot)</li>
     <li>Next, enter the CSD\sysprep account's password when prompted (the username will already be filled out). Ask around if you don't know what it is... or use our answers file! (it's encrypted in the file, so you won't be able to read it straight back out). This is <em>key</em>, as this is where the machine is being added to the Windows Domain. If you watch the terminal that appears closely, you'll see colored text flash by. Yellow is good, red is <em>bad</em>, and means you'll have to add it to the domain manually (either it doesn't have a network connection, you typed the password wrong, or something else is broken... you don't get a second chance, in any case).</li>
