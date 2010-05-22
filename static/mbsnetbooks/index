@@ -62,8 +62,8 @@ Passwords go in various places:
 
 There are a few things you might want to adjust in your sysprep answers file. Using the tool mentioned near the top of this post, you could change a few things:
 <ul>
-    <li>The Windows CD Key, locations listed at the top of the file</li>
-    <li>The Administrator/supervisor passwords, locations listed at the top of the file</li>
+    <li>The Windows CD Key, locations listed at the top of this document</li>
+    <li>The Administrator/supervisor passwords, locations listed at the top of this document</li>
     <li>The display settings, in specialize/Microsoft-Windows-Shell-Setup/Display</li>
 </ul>
 <b>Other Stuff</b>
