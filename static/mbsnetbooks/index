@@ -4,6 +4,11 @@ The below is a relatively disjointed rant about what we did over the course of t
 
 <a href="http://www.flickr.com/photos/hortont/4627878878/sizes/l/"><img src="http://farm5.static.flickr.com/4043/4627878878_edd49455fe.jpg" /></a>
 
+<b>Useful Files</b>
+<ul>
+    <li>The <a href="http://www.microsoft.com/downloads/details.aspx?familyid=696DD665-9F76-4177-A811-39C26D3B3B34&displaylang=en">Windows Automated Installation Kit</a> is vital to the process, as it includes the answers file editor. Download it, pop in a blank DVD (won't fit on a CD), right click (on a Windows 7 machine), and click "Burn image to disc" (on XP, you'll have to find a different tool to burn ISO images, you're on your own). MBS theoretically has a copy of this CD if you need it.</li>
+    <li>It's 2010. Video drivers are nice. The GMA500 drivers (for the Dell Mini 10) are theoretically available <a href="http://support.dell.com/support/downloads/download.aspx?c=us&l=en&s=gen&releaseid=R201458&SystemID=INSPIRON1210&servicetag=&os=WLH&osl=en&deviceid=18334&devlib=0&typecnt=0&vercnt=1&catid=-1&impid=-1&formatcnt=0&libid=6&typeid=-1&dateid=-1&formatid=-1&source=-1&fileid=279795">here</a>. Don't be scared away by the different model numbers (945/965) in the description; Intel went crazy with the naming for Poulsbo. I had trouble downloading this file on the school machines, so there's a mirror up <a href="http://files.hortont.com/mbsnetbooks/gma500-mini10.exe">here</a>, which is up-to-date as of May 22, 2010 (yell at me if there's a newer version, I'll update this).</li>
+</ul>
 <b>On Sysprep</b>
 
 The Windows Automated Installation Kit (download link is down in "Useful Files") is useful here. Download it, burn a copy onto a DVD, install it on a machine you're comfortable using. It can be any machine, but preferably one with a CD drive.
@@ -30,11 +35,6 @@ Passwords go in various places:
     <li>oobeSystem/UserAccounts/AdministratorPassword (local machine's Administrator account password)</li>
     <li>oobeSystem/UserAccounts/LocalAccounts/LocalAccount[name=supervisor] (local machine's supervisor account password)</li>
     <li>oobeSystem/AutoLogon/Password (local machine's Administrator account password)</li>
-</ul>
-<b>Useful Files</b>
-<ul>
-    <li>The <a href="http://www.microsoft.com/downloads/details.aspx?familyid=696DD665-9F76-4177-A811-39C26D3B3B34&displaylang=en">Windows Automated Installation Kit</a> is vital to the process, as it includes the answers file editor. Download it, pop in a blank DVD (won't fit on a CD), right click (on a Windows 7 machine), and click "Burn image to disc" (on XP, you'll have to find a different tool to burn ISO images, you're on your own). MBS theoretically has a copy of this CD if you need it.</li>
-    <li>It's 2010. Video drivers are nice. The GMA500 drivers (for the Dell Mini 10) are theoretically available <a href="http://support.dell.com/support/downloads/download.aspx?c=us&l=en&s=gen&releaseid=R201458&SystemID=INSPIRON1210&servicetag=&os=WLH&osl=en&deviceid=18334&devlib=0&typecnt=0&vercnt=1&catid=-1&impid=-1&formatcnt=0&libid=6&typeid=-1&dateid=-1&formatid=-1&source=-1&fileid=279795">here</a>. Don't be scared away by the different model numbers (945/965) in the description; Intel went crazy with the naming for Poulsbo. I had trouble downloading this file on the school machines, so there's a mirror up <a href="http://files.hortont.com/mbsnetbooks/gma500-mini10.exe">here</a>, which is up-to-date as of May 22, 2010 (yell at me if there's a newer version, I'll update this).</li>
 </ul>
 <b>The General Process</b>
 <ol>
