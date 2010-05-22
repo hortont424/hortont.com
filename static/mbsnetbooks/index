@@ -2,6 +2,8 @@
 <p>
 The below is a relatively disjoint rant about what we did over the course of the past two days (May 20/21, 2010) to get the new Windows 7 edition of sysprep working in order to properly Ghost and setup 22 Dell Mini 10 netbooks at MBS. If you're here because you're doing the same, good luck.
 
+<a href="http://www.flickr.com/photos/hortont/4627878878/sizes/l/"><img src="http://farm5.static.flickr.com/4043/4627878878_edd49455fe.jpg" /></a>
+
 <b>On Sysprep</b>
 
 The Windows Automated Installation Kit (download link is down in "Useful Files") is useful here. Download it, burn a copy onto a DVD, install it on a machine you're comfortable using. It can be any machine, but preferably one with a CD drive.
