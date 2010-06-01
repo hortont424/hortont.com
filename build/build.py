@@ -24,7 +24,7 @@ def buildBackwardsCompatibilityLinks(type):
             metadata = json.loads(readFileContents(f), encoding='utf-8')
 
             if "post-name" not in metadata:
-                continue
+                metadata["post-name"] = re.sub("__", "_", re.sub("[^a-z0-9_]", "", re.sub("\s","_", metadata["title"].lower())))
 
             ourDate = datetime.datetime.strptime(metadata["date"], "%Y.%m.%d %H:%M:%S").strftime("%Y/%m") # TODO: fixed slash
             outputFolder = os.path.join("output", blog_dir, ourDate, metadata["post-name"])
