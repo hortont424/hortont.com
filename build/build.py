@@ -15,6 +15,7 @@ def generatePostList(type):
 
 def buildBackwardsCompatibilityLinks(type):
     posts = {}
+    seenNames = []
     for root, dirs, files in os.walk(type):
         for filename in files:
             f = os.path.join(root, filename)
@@ -25,6 +26,12 @@ def buildBackwardsCompatibilityLinks(type):
 
             if "post-name" not in metadata:
                 metadata["post-name"] = re.sub("__", "_", re.sub("[^a-z0-9_]", "", re.sub("\s","_", metadata["title"].lower())))
+
+            if metadata["post-name"] in seenNames:
+                print "Duplicate post-name: ", metadata["post-name"]
+                sys.exit(1)
+            else:
+                seenNames.append(metadata["post-name"])
 
             ourDate = datetime.datetime.strptime(metadata["date"], "%Y.%m.%d %H:%M:%S").strftime("%Y/%m") # TODO: fixed slash
             outputFolder = os.path.join("output", blog_dir, ourDate, metadata["post-name"])
