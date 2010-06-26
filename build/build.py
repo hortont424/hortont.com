@@ -55,7 +55,7 @@ def buildBackwardsCompatibilityLinks(type):
                 if not os.path.exists(outputFolder):
                     os.makedirs(outputFolder)
                 outputFile = os.path.join(outputFolder, ".htaccess")
-                realURL = os.path.join(blog_prefix, "posts", f.replace(".control", ".html").replace("posts" + "/", ""))
+                #realURL = os.path.join(blog_prefix, "posts", f.replace(".control", ".html").replace("posts" + "/", ""))
                 htaccessContents = "RewriteEngine on\n" + "RewriteRule ^.*$ " + realURL + "\n"
                 out = codecs.open(outputFile, mode="w+")
                 out.write(htaccessContents)
