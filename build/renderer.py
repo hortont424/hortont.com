@@ -53,7 +53,11 @@ def renderPost(f, template, rss=False):
     if "post-name" not in metadata:
         metadata["post-name"] = generatePostName(metadata["title"])
 
-    metadata["url"] = os.path.join(blog_prefix, metadata["post-name"])
+    if template is not "static":
+        metadata["url"] = os.path.join(blog_prefix, metadata["post-name"])
+    else:
+        metadata["url"] = os.path.join(blog_prefix, f.replace(".control",".html"))
+
     metadata["id"] = re.sub("[^0-9]", "", metadata["date"])
     metadata["date"] = datetime.datetime.strptime(pubDate, "%Y.%m.%d %H:%M:%S").strftime("%Y.%m.%d")
 

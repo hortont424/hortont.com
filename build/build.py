@@ -74,7 +74,10 @@ def buildPosts(dir, template, typeName, outDir):
         if "post-name" not in metadata:
             metadata["post-name"] = generatePostName(metadata["title"])
 
-        outputFilename = os.path.join("output", blog_dir, metadata["post-name"], "index.html")
+        if template is not "static":
+            outputFilename = os.path.join("output", blog_dir, metadata["post-name"], "index.html")
+        else:
+            outputFilename = os.path.join("output", outDir, filename.replace(".control", ".html").replace(dir + "/", ""))
 
         if not os.path.exists(os.path.dirname(outputFilename)):
             os.makedirs(os.path.dirname(outputFilename))
