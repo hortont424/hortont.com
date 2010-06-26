@@ -19,30 +19,30 @@ def buildBackwardsCompatibilityLinks(type):
     for root, dirs, files in os.walk(type):
         for filename in files:
             f = os.path.join(root, filename)
-            if not f.endswith(".control"):
+            if not f.endswith(".control"): # use generatePostList
                 continue
 
             metadata = json.loads(readFileContents(f), encoding='utf-8')
 
             if "post-name" not in metadata:
-                metadata["post-name"] = re.sub("__", "_", re.sub("[^a-z0-9_]", "", re.sub("\s","_", metadata["title"].lower())))
+                metadata["post-name"] = generatePostName(metadata["title"])
 
             if metadata["post-name"] in seenNames:
-                print "Duplicate post-name: ", metadata["post-name"]
+                print "\n\nDuplicate post-name: ", metadata["post-name"], "\n\n"
                 sys.exit(1)
             else:
                 seenNames.append(metadata["post-name"])
 
-            ourDate = datetime.datetime.strptime(metadata["date"], "%Y.%m.%d %H:%M:%S").strftime("%Y/%m") # TODO: fixed slash
-            outputFolder = os.path.join("output", blog_dir, ourDate, metadata["post-name"])
+            outputFolder = os.path.join("output", blog_dir, "posts", os.path.dirname(f).replace("posts" + "/", ""))
+            postTime = os.path.basename(f).replace(".control", "")
 
             if not os.path.exists(outputFolder):
                 os.makedirs(outputFolder)
 
             outputFile = os.path.join(outputFolder, ".htaccess")
-            realURL = os.path.join(blog_prefix, "posts", f.replace(".control", ".html").replace("posts" + "/", ""))
-            htaccessContents = "RewriteEngine on\n" + "RewriteRule ^.*$ " + realURL + "\n"
-            out = codecs.open(outputFile, mode="w+")
+            realURL = os.path.join(blog_prefix, metadata["post-name"])
+            htaccessContents = "RewriteEngine on\n" + "RewriteRule ^.*" + postTime + ".*$ " + realURL + "\n"
+            out = codecs.open(outputFile, mode="a")
             out.write(htaccessContents)
             out.close()
 
@@ -68,7 +68,13 @@ def generateCategoryMap(type):
 def buildPosts(dir, template, typeName, outDir):
     for filename in generatePostList(dir):
         page = renderPost(filename, template)
-        outputFilename = os.path.join("output", outDir, filename.replace(".control", ".html").replace(dir + "/", ""))
+
+        metadata = json.loads(readFileContents(filename), encoding='utf-8') # ugh another load
+
+        if "post-name" not in metadata:
+            metadata["post-name"] = generatePostName(metadata["title"])
+
+        outputFilename = os.path.join("output", blog_dir, metadata["post-name"], "index.html")
 
         if not os.path.exists(os.path.dirname(outputFilename)):
             os.makedirs(os.path.dirname(outputFilename))

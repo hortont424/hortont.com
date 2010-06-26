@@ -14,6 +14,9 @@ from settings import *
 
 loader = TemplateLoader('templates', variable_lookup='lenient')
 
+def generatePostName(title):
+    return re.sub("^_*", "", re.sub("__+", "_", re.sub("[^a-z0-9_]", "", re.sub("\s","_", title.lower()))))
+
 def readFileContents(fn):
     fileHandle = codecs.open(fn, encoding='utf-8')
     fileContents = unicode(fileHandle.read())
@@ -47,7 +50,10 @@ def renderPost(f, template, rss=False):
 
     pubDate = metadata["date"]
 
-    metadata["url"] = os.path.join(blog_prefix, f.replace(".control",".html"))
+    if "post-name" not in metadata:
+        metadata["post-name"] = generatePostName(metadata["title"])
+
+    metadata["url"] = os.path.join(blog_prefix, metadata["post-name"])
     metadata["id"] = re.sub("[^0-9]", "", metadata["date"])
     metadata["date"] = datetime.datetime.strptime(pubDate, "%Y.%m.%d %H:%M:%S").strftime("%Y.%m.%d")
 
