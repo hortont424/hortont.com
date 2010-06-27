@@ -22,7 +22,7 @@ def buildBackwardsCompatibilityLinks(type):
             if not f.endswith(".control"): # use generatePostList
                 continue
 
-            oldStyle = False
+            oldStyle = True # generate oldstyle links for *everything*
             metadata = json.loads(readFileContents(f), encoding='utf-8')
 
             if "post-name" not in metadata:
