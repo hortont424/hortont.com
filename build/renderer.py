@@ -15,7 +15,7 @@ from settings import *
 loader = TemplateLoader('templates', variable_lookup='lenient')
 
 def generatePostName(title):
-    return re.sub("^-*", "", re.sub("--+", "-", re.sub("[^a-z0-9\-]", "", re.sub("\s","-", re.sub(u"α ↔ ω", "alphaomega", title.lower())))))
+    return re.sub("^-*", "", re.sub("--+", "-", re.sub("[^a-z0-9\-]", "", re.sub("\s","-", re.sub("<[^>]*>", "", re.sub(u"α ↔ ω", "alphaomega", title.lower()))))))
 
 def readFileContents(fn):
     fileHandle = codecs.open(fn, encoding='utf-8')
