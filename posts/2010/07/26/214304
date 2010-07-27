@@ -1,0 +1,19 @@
+I've been wearing glasses since third grade &mdash; approximately twelve years. I get new glasses about once a year or so, to adjust to changes in my prescription and fix scratches and such in the lenses.
+
+<img src="http://files.hortont.com/dispersion-spectrum.png" />
+
+I don't remember when I last got a new pair &mdash; it's been a few months, at least. Since I got them, though, I've noticed a significant degradation in something &mdash; initially, something I wasn't able to place. Eventually I noticed what it was: colors were moving! Different colors shifted different amounts depending on what part of the glass they passed through. As with a camera, the centers are perfect, and the edges are the problem areas.
+
+The primary case in which I noticed this for the first few months was when looking at syntax highlighted code: brightly-colored keywords would appear to shift relative to the baseline, some in different directions than others. I eventually mentioned this to Dad, who pointed out the principle of <a href="http://en.wikipedia.org/wiki/Dispersion_(optics)">dispersion</a>, and I noted that this was something that most of my lenses strived to reduce (for obvious reasons) through the use of <a href="http://en.wikipedia.org/wiki/Low_dispersion_glass">low-dispersion glass</a> (Nikon calls it "ED", and 3 of my 5 lenses have it).
+
+I'm somewhat intrigued by the fact that Nikon makes eyeglass lenses, but I think that's taking brand loyalty (and probably price) a little too far...
+
+Today I stumbled upon a remarkable example of this phenomenon: one of those neon "OPEN" signs at a store near my apartment. I was able to completely remove the red lettering from its containing blue box as shown below, just by looking through the top of my glasses instead of the center &mdash; not even something one would consider unreasonable or strange.
+
+<img src="http://files.hortont.com/dispersion-opensign.png" />
+
+The dispersion in the image above is <em>not</em> exaggerated (though it's not to scale, the open sign was quite a bit smaller than in the picture; call it two fingers high at arm's length, or so) &mdash; I could repeatedly get the top of the box to clear the bottom of the type.
+
+At this point, I'm quite convinced that this is completely unacceptable performance: it's <em>extremely irritating</em>, to say the very least. I'm fairly sure that something that happened during my last optometric appointment (or, at least, with my most recent pair of glasses) made this <em>much</em> worse, and I will be sure to bring this up next time I visit. (There's another whole rant to be had about how much I detest the fact that there are no truly objective measurements involved in eyeglass prescriptions, and how broken that is...)
+
+Yeah... so... let me know if you wear glasses and have a similar issue, I'd be interested to hear from you! Find a neon open sign and do your own experiments!
