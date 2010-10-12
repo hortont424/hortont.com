@@ -1,0 +1,18 @@
+Over the long weekend, I wrote a <em>very</em> simple <a href="http://en.wikipedia.org/wiki/Platform_game">platformer</a> for the Arduino platform, targeting a grid of 8x8 RGB LEDs as its display. It has ground of varying height, monsters to kill (or to have kill you), coins to collect, and pretty clouds, as well as the classic side-scrolling and jumping mechanics you'd expect. The controller is just three buttons on a small breadboard with long wires back to the board. It's obviously not very sophisticated, having only 64 pixels to display things with, but it was an entertaining "just because" project.
+
+<a href="http://files.hortont.com/platformer-2.jpg"><img src="http://files.hortont.com/platformer-2-thumb.jpg" /></a>
+
+The code is open-source (though not very clean nor well-documented, as it was a rushed weekend project) under the 2-clause BSD license, as always, on <a href="http://github.com/hortont424/arduino/blob/master/projects/led-matrix/platform.cpp">my Github</a>. The hardware is simply three momentary pushbuttons, an Arduino Diecimila, a handful of resistors, and one of Sparkfun's 8x8 RGB LED matrices &mdash; nothing special.
+
+<a href="http://files.hortont.com/platformer-1.jpg"><img src="http://files.hortont.com/platformer-1-thumb.jpg" /></a>
+
+There's a (somewhat long) video that pretty much demonstrates the entirety of the game (unfortunately, it was captured with my phone, so you can somewhat see the LED refresh rate &mdash; keep in mind that the blinking yellow coins are actually blinking):
+
+<div style='text-align: center;'>
+<video controls="controls">
+    <source src="http://files.hortont.com/platformer.mp4" type="video/mp4" />
+    <source src="http://files.hortont.com/platformer.ogv" type="video/ogg" />
+</video>
+</div>
+
+Should work if you're not stuck on IE...
