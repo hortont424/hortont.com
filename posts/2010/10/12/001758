@@ -6,7 +6,7 @@ The code is open-source (though not very clean nor well-documented, as it was a 
 
 <a href="http://files.hortont.com/platformer-1.jpg"><img src="http://files.hortont.com/platformer-1-thumb.jpg" /></a>
 
-There's a (somewhat long) video that pretty much demonstrates the entirety of the game (unfortunately, it was captured with my phone, so you can somewhat see the LED refresh rate &mdash; keep in mind that the blinking yellow coins are actually blinking):
+There's a (somewhat long) video that pretty much demonstrates the entirety of the game (unfortunately, it was captured with my phone, so you can somewhat see the LED refresh rate &mdash; though keep in mind that the blinking yellow coins are actually blinking):
 
 <div style='text-align: center;'>
 <video controls="controls">
