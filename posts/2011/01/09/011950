@@ -1,0 +1,157 @@
+<script>
+selectedLens = 0;
+function lensName(f)
+{
+    str = "&nbsp;";
+    if(f == 28)
+    {
+        str = "Nikon 28mm f/2.8 AI-s";
+    }
+    else if(f == 50)
+    {
+        str = "Nikon 50mm f/1.8D AF";
+    }
+    else if(f == 55)
+    {
+        str = "Nikon Micro 55mm f/2.8 AI-s";
+    }
+    else if(f == 180)
+    {
+        str = "Nikon 180mm f/2.8 ED AI-s";
+    }
+    else if(f == 18135)
+    {
+        str = "Nikon 18-135mm f/3.5-5.6G AF-S and Nikon 18-105mm f/3.5-5.6G VR AF-S";
+    }
+    else if(f == 70300)
+    {
+        str = "Nikon 70-300mm f/4.5-5.6 AF-S VR";
+    }
+    return str;
+}
+function identifyLens(f)
+{
+    str = "&nbsp;";
+    if(f == 0)
+    {
+        str = lensName(selectedLens);
+    }
+    else
+    {
+        str = lensName(f);
+    }
+    document.getElementById("lensid").innerHTML = str;
+}
+function showLens(f)
+{
+    if(selectedLens)
+    {
+        document.getElementById("lens" + selectedLens).className = "lens";
+        document.getElementById("lens" + selectedLens + "content").style.display = "none";
+    }
+    selectedLens = f;
+    document.getElementById("lens" + selectedLens).className = "lens selectedlens";
+    document.getElementById("lens" + selectedLens + "content").style.display = "";
+}
+function initLenses()
+{
+    lensids = [28, 50, 55, 180, 18135, 70300, 500];
+    for(i in lensids)
+    {
+        document.getElementById("lens" + lensids[i] + "content").style.display = "none";
+    }
+    identifyLens(28);
+    showLens(28);
+}
+if(typeof window.addEventListener != 'undefined')
+{
+    window.addEventListener('load', initLenses, false);
+}
+else if(typeof document.addEventListener != 'undefined')
+{
+    document.addEventListener('load', initLenses, false);
+}
+else if(typeof window.attachEvent != 'undefined')
+{
+    window.attachEvent('onload', initLenses);
+}
+</script>
+<style>
+img.lens
+{
+    opacity: 0.60;
+}
+img.lens:hover
+{
+    opacity: 0.80;
+}
+img.selectedlens
+{
+    opacity: 1.0 !important;
+}
+#lensid
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+</style>
+<table width="100%">
+<tr>
+    <td><img class="lens" id="lens28" onmouseout="identifyLens(0)" onmouseover="identifyLens(28)" onmousedown="showLens(28)" src="http://files.hortont.com/lens-gallery/lenses-2/28.png" /></td>
+    <td><img class="lens" id="lens50" onmouseout="identifyLens(0)" onmouseover="identifyLens(50)" onmousedown="showLens(50)" src="http://files.hortont.com/lens-gallery/lenses-2/50.png" /></td>
+    <td><img class="lens" id="lens55" onmouseout="identifyLens(0)" onmouseover="identifyLens(55)" onmousedown="showLens(55)" src="http://files.hortont.com/lens-gallery/lenses-2/55.png" /></td>
+    <td><img class="lens" id="lens18135" onmouseout="identifyLens(0)" onmouseover="identifyLens(18135)" onmousedown="showLens(18135)" src="http://files.hortont.com/lens-gallery/lenses-2/18135.png" /></td>
+    <td><img class="lens" id="lens180" onmouseout="identifyLens(0)" onmouseover="identifyLens(180)" onmousedown="showLens(180)" src="http://files.hortont.com/lens-gallery/lenses-2/180.png" /></td>
+    <td><img class="lens" id="lens70300" onmouseout="identifyLens(0)" onmouseover="identifyLens(70300)" onmousedown="showLens(70300)" src="http://files.hortont.com/lens-gallery/lenses-2/70300.png" /></td>
+</tr>
+</table>
+<div id="lensid">&nbsp;</div>
+<div id="lens28content">
+<a href="http://files.hortont.com/lens-gallery/originals/28/3.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/28/3.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/28/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/28/2.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/28/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/28/2cc.jpg" /></a>
+</div>
+<div id="lens50content">
+<a href="http://files.hortont.com/lens-gallery/originals/50/5.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/50/5.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/50/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/50/1.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/50/3.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/50/3.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/50/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/50/4.jpg" /></a>
+</div>
+<div id="lens55content">
+<a href="http://files.hortont.com/lens-gallery/originals/55/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/55/1.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/55/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/55/2.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/55/3.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/55/3.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/55/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/55/4.jpg" /></a>
+</div>
+<div id="lens180content">
+<a href="http://files.hortont.com/lens-gallery/originals/180/3.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/180/3.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/180/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/180/1.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/180/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/180/2.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/180/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/180/4.jpg" /></a>
+</div>
+<div id="lens18135content">
+<a href="http://files.hortont.com/lens-gallery/originals/18zoom/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/18zoom/1.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/18zoom/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/18zoom/2.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/18zoom/3.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/18zoom/3.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/18zoom/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/18zoom/4.jpg" /></a>
+</div>
+<div id="lens70300content">
+<a href="http://files.hortont.com/lens-gallery/originals/70300/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/70300/1.jpg" /></a>
+
+<a href="http://files.hortont.com/lens-gallery/originals/70300/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/70300/2.jpg" /></a>
+</div>
