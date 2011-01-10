@@ -99,6 +99,8 @@ img.selectedlens
 Occasionally people ask me why I have more than one or two lenses; I'm writing this so I'll have somewhere to point them to explain! Down below you can click on each of my Nikkors (I have two others, a 500mm Soligor mirror lens, and a plastic toy fisheye, which I won't talk about here) and see a few shots that show off why that particular lens is awesome (generally showing something that you couldn't do &mdash; at least easily &mdash; with the others).
 
 The lenses are not to scale, which you probably guessed since they're all the same height. Also, I have no idea if this will work on IE, and I don't really care.
+
+Tomorrow, I'm going to write a post about some <i>code</i>... what a novelty! It's been so long...
 <table width="100%">
 <tr>
     <td><img class="lens" id="lens28" onmouseout="identifyLens(0)" onmouseover="identifyLens(28)" onmousedown="showLens(28)" src="http://files.hortont.com/lens-gallery/lenses-2/28.png" /></td>
