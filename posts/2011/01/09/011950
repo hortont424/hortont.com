@@ -5,27 +5,27 @@ function lensName(f)
     str = "&nbsp;";
     if(f == 28)
     {
-        str = "Nikon 28mm f/2.8 AI-s";
+        str = "Nikkor 28mm f/2.8 AI-s";
     }
     else if(f == 50)
     {
-        str = "Nikon 50mm f/1.8D AF";
+        str = "Nikkor 50mm f/1.8D AF";
     }
     else if(f == 55)
     {
-        str = "Nikon Micro 55mm f/2.8 AI-s";
+        str = "Micro-Nikkor 55mm f/2.8 AI-s";
     }
     else if(f == 180)
     {
-        str = "Nikon 180mm f/2.8 ED AI-s";
+        str = "Nikkor 180mm f/2.8 ED AI-s";
     }
     else if(f == 18135)
     {
-        str = "Nikon 18-135mm f/3.5-5.6G AF-S and Nikon 18-105mm f/3.5-5.6G VR AF-S";
+        str = "Nikkor 18-135mm f/3.5-5.6G AF-S and 18-105mm f/3.5-5.6G VR AF-S";
     }
     else if(f == 70300)
     {
-        str = "Nikon 70-300mm f/4.5-5.6 AF-S VR";
+        str = "Nikkor 70-300mm f/4.5-5.6 AF-S VR";
     }
     return str;
 }
@@ -55,7 +55,7 @@ function showLens(f)
 }
 function initLenses()
 {
-    lensids = [28, 50, 55, 180, 18135, 70300, 500];
+    lensids = [28, 50, 55, 180, 18135, 70300];
     for(i in lensids)
     {
         document.getElementById("lens" + lensids[i] + "content").style.display = "none";
@@ -96,18 +96,26 @@ img.selectedlens
     font-size: 1.2em;
 }
 </style>
+Occasionally people ask me why I have more than one or two lenses; I'm writing this so I'll have somewhere to point them to explain! Down below you can click on each of my Nikkors (I have two others, a 500mm Soligor mirror lens, and a plastic toy fisheye, which I won't talk about here) and see a few shots that show off why that particular lens is awesome (generally showing something that you couldn't do &mdash; at least easily &mdash; with the others).
+
+The lenses are not to scale, which you probably guessed since they're all the same height. Also, I have no idea if this will work on IE, and I don't really care.
 <table width="100%">
 <tr>
     <td><img class="lens" id="lens28" onmouseout="identifyLens(0)" onmouseover="identifyLens(28)" onmousedown="showLens(28)" src="http://files.hortont.com/lens-gallery/lenses-2/28.png" /></td>
     <td><img class="lens" id="lens50" onmouseout="identifyLens(0)" onmouseover="identifyLens(50)" onmousedown="showLens(50)" src="http://files.hortont.com/lens-gallery/lenses-2/50.png" /></td>
     <td><img class="lens" id="lens55" onmouseout="identifyLens(0)" onmouseover="identifyLens(55)" onmousedown="showLens(55)" src="http://files.hortont.com/lens-gallery/lenses-2/55.png" /></td>
     <td><img class="lens" id="lens18135" onmouseout="identifyLens(0)" onmouseover="identifyLens(18135)" onmousedown="showLens(18135)" src="http://files.hortont.com/lens-gallery/lenses-2/18135.png" /></td>
-    <td><img class="lens" id="lens180" onmouseout="identifyLens(0)" onmouseover="identifyLens(180)" onmousedown="showLens(180)" src="http://files.hortont.com/lens-gallery/lenses-2/180.png" /></td>
     <td><img class="lens" id="lens70300" onmouseout="identifyLens(0)" onmouseover="identifyLens(70300)" onmousedown="showLens(70300)" src="http://files.hortont.com/lens-gallery/lenses-2/70300.png" /></td>
+    <td><img class="lens" id="lens180" onmouseout="identifyLens(0)" onmouseover="identifyLens(180)" onmousedown="showLens(180)" src="http://files.hortont.com/lens-gallery/lenses-2/180.png" /></td>
 </tr>
 </table>
 <div id="lensid">&nbsp;</div>
 <div id="lens28content">
+<p>
+This is my widest prime, and the closest-focusing lens that Nikon makes. I haven't spent enough time with it yet to have a lot of awesome pictures nor have a lot to say. However, I have noticed that it is <i>incredibly</i> sharp &mdash; notice the 100% crop of the picture of the little crab. Pretty awesome!
+
+This lens is pretty much for any situation where I want sharp, wide, and mostly distant stuff (it has a hard stop at infinite focus, so if I'm sure everything I want in focus is more than 45 feet away, I don't need to worry about it -- this would also be useful for pictures of the stars, though I have yet to use it for this purpose).
+</p>
 <a href="http://files.hortont.com/lens-gallery/originals/28/3.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/28/3.jpg" /></a>
 
 <a href="http://files.hortont.com/lens-gallery/originals/28/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/28/2.jpg" /></a>
@@ -115,6 +123,11 @@ img.selectedlens
 <a href="http://files.hortont.com/lens-gallery/originals/28/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/28/2cc.jpg" /></a>
 </div>
 <div id="lens50content">
+<p>
+As my now-oldest (and second-most-used) lens, I grab my "nifty fifty" any time I'm going somewhere dark (it's the fastest of the set, by more than a whole stop), or for portraits, or sometimes for around the house. It's a little too long to use inside, generally, but can come in handy in some situations.
+
+The most obvious useful characteristic of this lens is that it's sharp wide open, and wide open means <i>wide</i> open, so the depth of field is extremely small. Take the picture of Bongo below as an example of why that can be useful.
+</p>
 <a href="http://files.hortont.com/lens-gallery/originals/50/5.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/50/5.jpg" /></a>
 
 <a href="http://files.hortont.com/lens-gallery/originals/50/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/50/1.jpg" /></a>
@@ -124,6 +137,13 @@ img.selectedlens
 <a href="http://files.hortont.com/lens-gallery/originals/50/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/50/4.jpg" /></a>
 </div>
 <div id="lens55content">
+<p>
+This is my favorite lens, bar absolutely none. It's fast, it has <i>beautiful</i> milky-smooth bokeh, and it's supposedly the sharpest lens Nikon has ever made. It's the only lens I'll ever pull out when asked to take pictures of food or flowers. It can be used for walkabout photography (i.e. it does focus to infinity), but I have a somewhat broken model with an exceedingly sticky focuser, which, while good for holding focus while doing fine adjustment on a tripod, isn't that helpful when trying to focus on stuff while walking around, so I don't use it for that much.
+
+Photographing the world of the very small is interesting to me: it provides a world devoid of judgement, sort of like photographing birds... there are no <i>humans</i> in the figurative picture; nobody waiting on me, I can just sit there all day and tweak and compose.
+
+I have an extension ring that gets this lens to 1:1 magnification; I use it occasionally, but 1:1 is just <i>so</i> small that it's hard to control at that point.
+</p>
 <a href="http://files.hortont.com/lens-gallery/originals/55/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/55/1.jpg" /></a>
 
 <a href="http://files.hortont.com/lens-gallery/originals/55/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/55/2.jpg" /></a>
@@ -133,6 +153,11 @@ img.selectedlens
 <a href="http://files.hortont.com/lens-gallery/originals/55/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/55/4.jpg" /></a>
 </div>
 <div id="lens180content">
+<p>
+This is my bird lens, without question. It has the same milky-smooth bokeh as the 55mm Micro, but at a focal length more amenable to capturing our feathery friends than ladybugs. It's an old "pro" lens, which I got used (for less than a tenth of "new" price, which is rare for lenses, especially Nikkors) and in perfect condition a few years ago, and weighs a <i>ton</i>, but it collects light like nobody's business.
+
+The fact that this opens up to f/2.8 makes it useful in a few other situations: Amy's graduation was a primary one. We were inside, with very little light, and there was no space for a tripod, so I needed something <em>fast</em>. Despite my hands shaking overtime from holding up all of that glass, the extra speed it provides over my telephoto zooms made it possible to get sharp closeups of the graduates without leaving my seat in the audience.
+</p>
 <a href="http://files.hortont.com/lens-gallery/originals/180/3.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/180/3.jpg" /></a>
 
 <a href="http://files.hortont.com/lens-gallery/originals/180/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/180/1.jpg" /></a>
@@ -142,6 +167,11 @@ img.selectedlens
 <a href="http://files.hortont.com/lens-gallery/originals/180/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/180/4.jpg" /></a>
 </div>
 <div id="lens18135content">
+<p>
+These are the kit lenses for the D80 and D7000, respectively. I sold the 18-135 along with the D80 to Vivian, replacing it with the shorter-but-similar 18-105. More than half of the pictures I've ever taken were taken with the 18-135, because it's ultimately <i>convenient</i>. It has the widest field of view of any of my lenses, and also reaches a good ways into the telephoto side of things, making it ideal for situations where you're just walking around and don't know what you'll run into.
+
+The newer 18-105 &mdash; while sacrificing some zoom on the long end &mdash; adds VR, which <em>supposedly</em> provides about four stops of handheld-shake reduction. Just like with the 70-300, it definitely helps to some extent, though I haven't measured it.
+</p>
 <a href="http://files.hortont.com/lens-gallery/originals/18zoom/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/18zoom/1.jpg" /></a>
 
 <a href="http://files.hortont.com/lens-gallery/originals/18zoom/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/18zoom/2.jpg" /></a>
@@ -151,6 +181,13 @@ img.selectedlens
 <a href="http://files.hortont.com/lens-gallery/originals/18zoom/4.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/18zoom/4.jpg" /></a>
 </div>
 <div id="lens70300content">
+<p>
+I got this lens while I was in California; it's pretty awesome, if only as a companion to the other zoom. It has a lot of the same applications as the 180 (plus the ability to change framing without moving) &mdash; however, it's much slower, and the bokeh can often be less than ideal (certainly nowhere near as beautiful as the 55 or 180).
+
+It has VR, too, which helps a <i>ton</i> at the 300mm end. You can watch the handheld shake evaporate as soon as you touch the autofocus button, and I'm quite convinced VR is key without a tripod at these focal lengths.
+
+It's quite usable as a walkabout lens, but I often feel constrained by the 70mm end, wishing it would go to 28mm or even just 50, but I'm pretty resolved at this point to never buy another variable-aperture lens (Nikon makes a 28-300, but it's super expensive and variable-aperture), so that'll have to wait a few years. It also won't focus any closer than about 1.4 meters, which is a bit annoying at times.
+</p>
 <a href="http://files.hortont.com/lens-gallery/originals/70300/1.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/70300/1.jpg" /></a>
 
 <a href="http://files.hortont.com/lens-gallery/originals/70300/2.jpg"><img src="http://files.hortont.com/lens-gallery/thumbs/70300/2.jpg" /></a>
