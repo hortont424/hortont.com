@@ -1,0 +1,15 @@
+Since mid-November, I've been using my free time to work on a little application currently called <em>Notebook</em>. It's a <a href="http://en.wikipedia.org/wiki/Read-eval-print_loop">REPL</a> of sorts, but implemented in Cocoa, and heavily inspired by <a href="http://www.wolfram.com/mathematica/">Mathematica</a> (since Mathematica also calls its evaluation environment a 'notebook', I'm open to suggestions for a new name, and probably won't be shipping it with the current one).
+
+I pushed up a <a href="http://notebook.hortont.com">content-free website</a> last night... it'll get filled in eventually. The code is on <a href="https://github.com/hortont424/notebook">Github</a>.
+
+Notebook has a pluggable language system; for right now, I'm primarily maintaining a Python backend, though there is a working Ruby backend in the repository as well. Matt has talked about implementing a Haskell backend, which I think would be awesome, but hasn't gotten around to it yet.
+
+<div style="text-align: center;"><img src="http://notebook.hortont.com/screenshots/2011-01-11/language-chooser.png" /></div>
+The basic idea of Notebook is simple: you have a bunch of cells, all operating with the same global state, but you can evaluate them in whatever order you want, however many times. You can define a function in one, use it in another, assign a global variable in one, access it in another, etc.; you can go back and edit the definition of your function <em>inline</em>, exactly where you initially typed it.
+
+When you evaluate a cell, its output is captured and attached directly to its bottom; when you re-evaluate a cell, the old output is replaced:
+
+<div style="text-align: center;"><img src="http://notebook.hortont.com/screenshots/2011-01-11/python-example.png" /></div>
+That's basically all there is to it, right now... I just wanted to get it out there. There are a huge number of features planned, and a huge number of known bugs, and many months of work to do before it's 1.0 &mdash; if anybody wants to help, feel free!
+
+It is currently 100% <em>not</em> ready for anyone to use it; while it works, many basic features haven't even been considered yet, as it's been all about getting the backends working properly (which was a Distributed Objects learning experience, believe you me!). However, I hope that someday it can be the place that I point people who want to learn Python &mdash; the instant, inline feedback that it provides could be extremely useful (it was for me, with Mathematica, anyway!).
