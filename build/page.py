@@ -30,6 +30,8 @@ class Page(object):
     def __init__(self, filename):
         super(Page, self).__init__()
 
+        self.loaded = False
+
         # Figure out whether we were given the control file or the data file
         if filename.endswith(".control"):
             self.controlPath = filename
@@ -43,9 +45,29 @@ class Page(object):
             if not os.path.exists(file):
                 raise IOError("File not found: {0}".format(file))
 
-        self.parse_metadata(json.load(open(self.controlPath)))
+        # Default attributes for all pages; subclasses can add attributes to this
+        # list during init and they'll be included when load is called. Attributes
+        # are specified as a dict of arguments to parse_metadata.copy_attribute.
+        self.attributes = {
+            "title": {
+                "required": True,
+                "valid": (lambda x: x != "")
+            },
+            "date": {
+                "default": (lambda p: datetime.now()),
+                "convert": (lambda x: datetime.strptime(x, config.date_format))
+            },
+            "author": {
+                "default": (lambda p: config.default_author)
+            }
+        }
 
-        self.data = open(self.filePath).read()
+    def load(self):
+        # Load both the control metadata and the contents into memory
+        self.parse_metadata(json.load(open(self.controlPath)))
+        self.content = open(self.filePath, encoding="utf-8").read()
+
+        self.loaded = True
 
     def parse_metadata(self, control):
         def copy_attribute(name, attrname=None, required=False, default=None, valid=None, convert=None):
@@ -76,6 +98,12 @@ class Page(object):
                     # If it's optional, use the default instead
                     setattr(self, attrname, default)
 
-        copy_attribute("title", required=True, valid=lambda x: x != "")
-        copy_attribute("date", default=datetime.now(), convert=lambda x: datetime.strptime(x, config.date_format))
-        copy_attribute("author", default=config.default_author)
+        # Copy all of the specified attributes (from Page and subclasses)
+        for name in self.attributes:
+            copy_attribute(name, **self.attributes[name])
+
+    def render(self, template):
+        if not self.loaded:
+            self.load()
+
+        return self.title
