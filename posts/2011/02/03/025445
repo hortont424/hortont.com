@@ -4,6 +4,6 @@ It's still in an <em>incredibly</em> alpha state, but you're welcome to <a href=
 
 I hacked up a silly icon so that it doesn't look so dumb in the dock; it's supposed to be a cell, split in half: input and output. Now you see it, now you don't! In case you don't use OS X, it's the seventh icon from the left. I'm not much of an icon designer, obviously, so I went for the flat three-color approach instead of the awesome photorealistic style that Apple and co. use (which I can't even begin to replicate).
 
-<a href="http://notebook.hortont.com/screenshots/2011-02-03/dock-thumb.png"><img src="http://notebook.hortont.com/screenshots/2011-02-03/dock-thumb.png" /></a>
+<a href="http://notebook.hortont.com/screenshots/2011-02-03/dock.png"><img src="http://notebook.hortont.com/screenshots/2011-02-03/dock-thumb.png" /></a>
 
 I'm working on Notebook for credit this semester through <a href="http://rcos.cs.rpi.edu/">RCOS</a>; many thanks to Moorthy and Sean O'Sullivan for making this program possible; if you're not aware of RCOS, I wrote a <a href="http://www.hortont.com/blog/on-rcos-or-open-software-at-rensselaer/">little bit</a> about it a little over a year ago.
