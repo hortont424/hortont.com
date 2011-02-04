@@ -1,0 +1,21 @@
+I'm just wrapping up the end of the second week of my last semester at RPI, so it's time for another list of thoughts.
+
+<strong>Crypto/NetSec</strong>
+
+I've only had one session of this so far because of the snow and the fact that it meets only once a week. It seems like the final project is something like a ground-up implementation of SSH, which sounds entertaining. This is also my only stereotypical CS class this semester.
+
+<strong>Experimental Game Design</strong>
+
+I haven't been to this class yet, and it looks like that might continue being the case for at least another week: I wasn't in it yet during the first meeting, and the second was canceled due to snow. Next week there's a chance I'll be out of town for interviews. Regardless, I did the first project, which was to write a rough draft of a game in a week.
+
+I wrote a multiplayer multitouch (for the desktop; you use Magic Trackpads/the built in trackpad to control it) cross between some of my favorites: Osmos, World of Goo, and Geometry Wars, entirely with CoreGraphics (read: no GL, so it's easier/faster to write, but it just barely runs at full speed on my machine when you've got a ton of bodies on the screen). It's not even remotely in a state to post at the moment, but it sits in a GitHub private repo that I'll publish after the class is over (if I determine that I'm even allowed to do that at all).
+
+<strong>IT and Society</strong>
+
+This is going to be a repeat of Biology: I do it because I have to, not because I want to. It fulfills two graduation requirements in one class, but it is not fun (it's a freshman class, full of reading and writing and silly IT-y things that I really don't enjoy at this point). My section's TA seems pretty awesome, though, so that'll help.
+
+We have to form fake corporations and respond to RFPs and stuff... it makes me feel like I'm living inside <a href="http://news.ycombinator.com">Hacker News</a>.
+
+<strong>RCOS</strong>
+
+I'm working on <a href="http://notebook.hortont.com/">Notebook</a> for credit for RCOS this semester; I'm giving my first presentation in less than an hour alongside Matt and Peter and probably others. Fun!
