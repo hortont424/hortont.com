@@ -1,0 +1,15 @@
+A few weeks ago, my MacBook Pro started kernel panicing constantly, just minutes after boot. Being quite familiar with similar issues in previous machines, I reinstalled OS X, to no effect. Took it to the Apple Store, "it's caused by some USB device, here, have it back". Left it with no devices plugged in, same story. I'm not sure why I was unable to duplicate the problem in the Store; though, at the time, the issue would sometimes disappear for a day at a time.
+
+I bought an iPad the day I retrieved my laptop; I wasn't planning on going on a trip without a computer of some sort, and I had spent some time with Peter's first-gen, which was awesome as well. I've been challenging myself to find a way to do most of the things (everything besides writing code) that I do on a regular computer on the iPad; I'm even writing this post on it! (that's more of a challenge for me than you dynamic-blog people know)
+
+It's been great.
+
+But I can't write code. I haven't gotten to work on Notebook since Xcode 4 launched; I hear it has awesome multi-project support that will make things a lot easier. I've been working on my game for EGD, because I have lots of extra PCs around, but it's uncomfortable and I don't have a way to show things off in class, which is super annoying.
+
+I'm going to take my machine back at some point; I have a lot more logs now, and a lot of debugging that I've done that I can't share with them (I physically disconnected all of the internal USB devices one at a time, but they don't want to hear that &mdash; also, it had no effect; I also disabled USB by deleting the drivers, but that didn't help any either (it seemed to, briefly, but then I was once again presented with that wonderful multilingual dialog)).
+
+Hopefully they'll fix it; I miss Cocoa and Exposé and TextMate and Aperture (I have hundreds of pictures from our trip that I can't edit and upload)! Hopefully quickly, so I have a machine to show off stuff in EGD with. VNC to Jayne on the iPad is not an effective demonstration device, what with the 10+ second lag. Thanks, TimeWarner.
+
+I found a few potential apartments in Cupertino; I'll save that for a post once I have a functional way to upload pictures.
+
+So, if anyone's wondering why I don't get back to you as quickly as usual, or you note that I'm short on words in my replies, it's likely because I'm tapping on glass instead of plastic keys.
