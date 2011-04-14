@@ -1,0 +1,17 @@
+A year and a half ago, I wrote a <a href="http://www.hortont.com/blog/on-rcos-or-open-software-at-rensselaer/">little bit</a> about RCOS, mostly explaining what it is and why it's so important in the context of RPI. Recently, though, I've had the opportunity to experience another of the virtues of RCOS; one which the faculty will never see, and which the younger students can only dream of.
+
+The first two months of this year were spent frantically submitting job applications via all possible means, responding to multitudes of emails, fielding phone screens from quite a few companies, and finally ending in on-sites. The majority of this went exactly as you or I would expect; however, looking back over all of these conversations, I noticed an interesting pattern:
+
+<em>They don't care about school.</em>
+
+Sure, they wanted someone with a Bachelor's. But to all of them, that part seemed to be entirely uninteresting. Besides brief, passing references ("What was your favorite class?"), there was nearly no discussion of formal education. I could likely have had an English degree and they wouldn't have cared; my answer to "What is your favorite class?" was often something in ARTS or COMM, and that didn't even begin to phase them. Grades didn't even come into the picture.
+
+What did we talk about? We talked about Notebook, we talked about Seed, we talked about the code that runs this site, we talked about all of the random stuff on my GitHub. We even talked about RCOS explicitly, because <em>they like to hire people who <strong>do</strong> things.</em>
+
+The thought of a single place to go to find people who actively participate in software projects outside of what is required to graduate, and to have the added benefit of being able to instantly investigate their code had some of these engineers and hiring managers salivating. I had one manager ask me about explicit internal details of one of my projects &mdash; things he couldn't have known had he not looked at the code, and things that would have been <em>impossible</em> for him to know had said code not been open-source.
+
+The takeaway from this is simple, and bipartite:
+<ul>
+<li>The work you do in RCOS can help you get a job. If there's code, and it's great, you're already better than almost <em>every</em> other candidate, regardless of school, major, or grades.</li>
+<li>The work you do in RCOS should be of quality representative of yourself, because employers <em>will</em> look at it. In addition, there better actually <em>be</em> code to look at, or you're simply forfeiting this opportunity.</li>
+</ul>
