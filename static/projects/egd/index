@@ -1,0 +1,34 @@
+<style>
+#projects
+{
+    opacity: 1.0 !important;
+}
+</style>
+<h1>Experimental Game Design</h1>
+<p>
+During my very last semester at RPI, I took Experimental Game Design with Kathleen Ruiz. The semester was spent designing and implementing games; two smaller ones, near the beginning of the semester, and a large final project (in teams), consuming the entire remainder of the semester.
+</p>
+</div></td><td></td></tr>
+<tr align="center"><td></td><td class="post"><div class="postContent"><img style="border-radius: 10px;" src="http://files.hortont.com/egd/egd1.png">
+
+<b>Project 1</b> &mdash; <a href="http://youtu.be/oQjIz9AVKcA?hd=1">Watch it!</a>
+<p>
+My first game was a simple two-player gravity simulation, where each player was given a multitouch trackpad and could create up to eleven gravity wells by placing their fingers on the trackpad. Gravity affects circular bubbles, which merge if they touch, growing if they're of the same color, and annihilating each other if they aren't. Players attempt to fill their target (the square areas in the middle of the board), and attempt to prevent their opponent from filling their target by annihilating their bubbles.
+</p>
+<p>The game is written in Objective-C, making use of Apple's multitouch APIs for input and CoreGraphics for drawing.</p>
+</div></td><td></td></tr>
+<tr align="center"><td></td><td class="post"><div class="postContent">
+<img style="border-radius: 10px;" src="http://files.hortont.com/egd/egd2.png">
+
+<b>Project 2</b> &mdash; <a href="http://youtu.be/VJtBCUOUHm0?hd=1">Watch it!</a>
+<p>
+On my plane rides to and from Cupertino in February, I wrote a strange 2D variant of something like Minecraft in pure OpenGL. It's not a very interesting game, but was my first big experiment with procedurally generated landscape.
+</p>
+</div></td><td></td></tr>
+<tr align="center"><td></td><td class="post"><div class="postContent">
+<img style="border-radius: 10px;" src="http://files.hortont.com/egd/sand.png">
+
+<b>Project 3: SAND</b> &mdash; <a href="http://youtu.be/7aqBUXCIpWo?hd=1">Watch it!</a>
+<p>
+SAND took Pete and I most of the semester; he did the game design, music, sound effects, and graphic design, and I brought it all together into a big huge game. It really is a beast, requiring six players for a full game. It's hard to describe, and the trailer won't do much to help that. There are a bunch of documents <a href="http://sand.hortont.com/">here</a>.
+</p>
