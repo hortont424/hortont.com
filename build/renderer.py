@@ -120,3 +120,17 @@ def renderArchive(c, template, next, prev, rss=False, category=None):
                          title=title,
                          showTitle=showTitle,
                          rssurl=rssurl).render(postfix, doctype=doctype)
+
+def renderHistory(c, template):
+    postfix = doctype = "html"
+    buildDate = datetime.datetime.today().strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+    title = u"hortont &middot; blog &middot; history"
+
+    tmpl = loader.load(template + '.' + postfix, encoding='utf-8')
+    return tmpl.generate(posts=c,
+                         baseurl=www_prefix,
+                         staticurl=static_prefix,
+                         blogurl=blog_prefix,
+                         buildDate=buildDate,
+                         title=title).render(postfix, doctype=doctype)

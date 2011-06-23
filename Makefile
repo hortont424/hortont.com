@@ -23,6 +23,7 @@ all-serial: clean unclean copy-data
 	python ./build/buildArchive.py
 	python ./build/buildRSS.py
 	python ./build/buildEverything.py
+	python ./build/buildHistory.py
 
 	python ./build/stats.py
 
