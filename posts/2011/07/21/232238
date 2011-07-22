@@ -14,11 +14,21 @@ function go(camera)
     document.getElementById(camera).play();
 }
 </script>
-<audio id="retina" preload="auto"><source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Retina.mp3" /></audio>
-<audio id="d7000" preload="auto"><source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/D7000.mp3" /></audio>
-<audio id="exa" preload="auto"><source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Exa.mp3" /></audio>
-<audio id="exacta" preload="auto"><source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Exacta.mp3" /></audio>
-<audio id="nikkormat" preload="auto"><source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Nikkormat.mp3" /></audio>
+<audio id="retina" preload="auto">
+<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Retina.mp3" />
+<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Retina.ogg" /></audio>
+<audio id="d7000" preload="auto">
+<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/D7000.mp3" />
+<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/D7000.ogg" /></audio>
+<audio id="exa" preload="auto">
+<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Exa.mp3" />
+<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Exa.ogg" /></audio>
+<audio id="exacta" preload="auto">
+<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Exacta.mp3" />
+<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Exacta.ogg" /></audio>
+<audio id="nikkormat" preload="auto">
+<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Nikkormat.mp3" />
+<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Nikkormat.ogg" /></audio>
 <strong>Kodak Retina</strong>
 
 <a href="javascript:go('retina')"><img src="http://files.hortont.com/camera-sounds/retina.jpg" /></a>
