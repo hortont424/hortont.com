@@ -1,0 +1,7 @@
+In the interest of being able to easily change the outdated buttons along the top of the page without going back to Illustrator and regenerating the image files, I recreated them in CSS! Sort of; I had to change the font to one that Google had.
+
+Anyway, I've only changed them on <a href="http://www.hortont.com/">the front page</a>, in hopes that people could check and see if it works in their browser, and let me know if it doesn't (or if it does, if you just want to be friendly!) so I can fix it before rolling it out to the universal top bar.
+
+So, uh, do that, if you want to!
+
+Also, a few weeks ago, I implemented a <a href="http://hortont.com/blog/history/">history view</a> because I often have a hard time finding old posts to refer back to them. So, if you remember a post you haven't been able to find (yeah, right!)... you probably still won't be able to find it! (because you have to know the title! and those are often vague or obscure or complete nonsense!)
