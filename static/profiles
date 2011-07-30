@@ -1,8 +1,4 @@
 <style>
-#profiles
-{
-    opacity: 1.0 !important;
-}
 #profile
 {
     color: #999;
