@@ -1,0 +1,5 @@
+I wrote a <a href="http://filtr.hortont.com">SVG filter builder</a> during a weekend a few weeks ago, which someone might find entertaining. You'll need either a WebKit nightly (it absolutely will not work in shipping Safari) or maybe a very recent Chrome. It'll work best with the WebKit nightly, though, I promise.
+
+I also hacked up a really dumb game which is mostly rigged so that only Amy can possibly do well, but you can try if you want! <a href="http://files.hortont.com/tv/index.xhtml">"Match A Smudge to a Moment"</a>. This one should work anywhere (but best in Chrome and Safari). Make sure you turn your volume up (and click the play button as many times as you want to replay the sound you're currently trying to match to a smudge, and click on the smudge to match it (or click again to unmatch); there are no instructions on the page, you'll figure it out!)
+
+Fun!
