@@ -6,8 +6,8 @@ www_prefix = "http://www.hortont.com/"
 static_prefix = "http://files.hortont.com/www/"
 
 if os.getcwd() == "/Users/hortont/Sites":
-    www_prefix = "http://localhost/~hortont/output/"
-    static_prefix = "http://localhost/~hortont/output/"
+    www_prefix = "http://localhost:8080/"
+    static_prefix = "http://localhost:8080/"
 
 blog_dir = "blog/"
 
