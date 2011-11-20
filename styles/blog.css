@@ -1,25 +1,86 @@
-td.post
-{
+.postTitle {
+    margin: 0px auto 0px auto;
+    width: 670px;
+    height: 40px;
+    font-size: 28pt;
+    fill: #0B486B;
+    font-family: "Helvetica Neue", "Helvetica", "Verdana";
+    font-weight: 800;
+}
+
+.post {
+    margin: -7px 0px 40px 30px;
+    padding: 10px 20px;
     width: 600px;
+    background-color: white;
+
+    border-radius: 0px 0px 15px 15px;
+    font-family: "Helvetica", "Verdana";
+    line-height: 1.4em;
+    font-size: 12pt;
+    text-align: justify;
+    color: #444;
 }
 
-#catTitle
-{
-    color: #222;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px;
+#main {
+    position: absolute;
+    top: 180px;
+    left: 0px;
+    width: 700px;
 }
 
-#blog
-{
-    opacity: 1.0 !important;
+#sidebar {
+    position: absolute;
+    top: 180px;
+    left: 700px;
+    right: 0px;
+    color: #ddd;
+    font-family: "Helvetica", "Verdana";
+}
+
+p {
+    margin: 0px;
+}
+
+p + p {
+    margin-top: 1.5em;
+}
+
+.dateline {
+    font-size: 10pt;
+    font-weight: normal;
+    font-family: "Verdana";
+    text-align: right;
+    text-anchor: end;
+    fill: white;
+}
+
+.year[class~=dateline] {
+    opacity: 0.4;
+}
+
+.month[class~=dateline] {
+    opacity: 0.6;
+}
+
+.day[class~=dateline] {
+    opacity: 0.9;
+}
+
+.stripe1 { fill: #CFF09E }
+.stripe2 { fill: #A8DBA8 }
+.stripe3 { fill: #79BD9A }
+.stripe4 { fill: #3B8686 }
+
+a {
+    color: #3B8686;
+    text-decoration: none;
 }
 
 a.nav
 {
     text-decoration: none;
-    color: #444;
+    color: #CCC;
     font-weight: bold;
     font-size: 2.5em;
     text-shadow: #edeceb 0px 0px 8px;
@@ -27,7 +88,7 @@ a.nav
 
 a.nav:hover
 {
-    color: #666;
+    color: #FFF;
 }
 
 div.navwrapperl
@@ -42,10 +103,4 @@ div.navwrapperr
     position: fixed;
     right: 8px;
     bottom: 5px;
-}
-
-p.commentLink
-{
-    text-align: right;
-    font-weight: bold;
 }

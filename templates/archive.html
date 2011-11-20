@@ -3,6 +3,7 @@
       xmlns:xi="http://www.w3.org/2001/XInclude">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="${baseurl}styles/zero.css" type="text/css" />
     <link rel="stylesheet" href="${baseurl}styles/style.css" type="text/css" />
     <link rel="stylesheet" href="${baseurl}styles/blog.css" type="text/css" />
 
@@ -24,24 +25,10 @@
     <py:if test="nextPage != ''"><div class="navwrapperl"><a class="nav" href="${nextPage}" title="Older Posts">&larr;</a></div></py:if>
     <py:if test="previousPage != ''"><div class="navwrapperr"><a class="nav" href="${previousPage}" title="Newer Posts">&rarr;</a></div></py:if>
 
-    <table id="posts" border="0" width="100%">
-    <py:if test="showTitle">
-    <tr>
-        <td></td>
-        <td class="post">
-            <div id="catTitle">
-                ${Markup(title)}
-            </div>
-        </td>
-        <td></td>
-    </tr>
-    </py:if>
-    <tr>
-        <td></td>
-        <td class="post">${Markup(content)}</td>
-        <td></td>
-    </tr>
-    </table>
+    <div id="main">
+    ${Markup(content)}
+    </div>
+    
   </body>
   <script type="text/javascript">
   var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

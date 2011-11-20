@@ -59,7 +59,11 @@ def renderPost(f, template, rss=False):
         metadata["url"] = os.path.join(blog_prefix, f.replace(".control",".html"))
 
     metadata["id"] = re.sub("[^0-9]", "", metadata["date"])
-    metadata["date"] = datetime.datetime.strptime(pubDate, "%Y.%m.%d %H:%M:%S").strftime("%Y.%m.%d")
+    real_date = datetime.datetime.strptime(pubDate, "%Y.%m.%d %H:%M:%S")
+    metadata["date"] = real_date.strftime("%Y.%m.%d")
+    metadata["year"] = real_date.strftime("%Y")
+    metadata["month"] = real_date.strftime("%m")
+    metadata["day"] = real_date.strftime("%d")
 
     metadata["shortContent"] = re.sub("<(.*?)>","",contents[0:500]) + "..."
 
