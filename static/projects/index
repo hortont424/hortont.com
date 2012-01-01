@@ -11,11 +11,11 @@ a.project
 <h1>Code</h1>
 <p>
 <b>Active</b><br/>
-<a class="project" href="http://notebook.hortont.com/">Notebook</a> &mdash; an inline, pluggable, Cocoa-based REPL<br/>
 <a class="project" href="http://www.hortont.com/projects/website/">hortont.com</a> &mdash; the array of Python scripts which generate this website<br/>
 </p>
 <p>
 <b>Unmaintained</b><br/>
+<a class="project" href="http://notebook.hortont.com/">Notebook</a> &mdash; an inline, pluggable, Cocoa-based REPL<br/>
 <a class="project" href="http://www.hortont.com/projects/seed/">libseed</a> &mdash; JavaScript bindings for the Gnome platform<br/>
 <a class="project" href="http://www.hortont.com/projects/gnome-games/">Gnome Games</a> &mdash; Clutter-based Seed ports of Lights Off, Same Gnome, and Mines<br/>
 <a class="project" href="http://www.hortont.com/projects/epiphany-extensions/">Epiphany Extensions</a> &mdash; a variety of Epiphany 2.28+ extensions, in Seed<br/>
