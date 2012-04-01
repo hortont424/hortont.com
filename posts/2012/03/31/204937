@@ -1,0 +1,7 @@
+Having lots of time to think about the web and little time to create content, I took a few minutes out of this weekend to make a silly little thing with <a href="http://mbostock.github.com/d3/">d3.js</a>.
+
+Not being a driver, I find myself walking around a lot - to work, to visit people, to find food. Some of those walks are longer than others, and I thought it would be neat to be able to visualize and compare them!
+
+I built <a href="http://trips.hortont.com">trips.hortont.com</a> to do that. The map on the right is a little confusing, because it is four cities, superimposed, with my "home" in each centered in the same place (using our 15th St. apartment for "home" in Troy, since I had three). Lots of things respond to hover, and clicking the different sorting options provides a few different ways to look at the trips (and adds a splash of color!).
+
+The most interesting thing that sticks out of the data (to me!) is the relative shapes of the four cities. Cupertino and La Jolla are <em>way</em> younger than Troy and Colchester, and are clearly more "designed"; La Jolla with swooping curves all around, and Cupertino with a strict grid (except around IL, of course).
