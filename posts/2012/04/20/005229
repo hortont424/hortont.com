@@ -46,7 +46,7 @@ ul.tripList li.special a {
 <ul class="tripList">
 <li>Return to SF</li>
 <li>Attempt to go to the <a href="http://www.exploratorium.edu/">Exploratorium</a>; fail (they were closed)</li>
-<li>Attempt to go to the California Academy of Sciences; fail (we got there 20 minutes before closing)</li>
+<li>Attempt to go to the <a ref="http://www.calacademy.org/">California Academy of Sciences</a>; fail (we got there 20 minutes before closing)</li>
 <li>Lunch from a <a href="http://www.yelp.com/biz/annakoot-golden-gate-park">food truck</a> around the <a href="http://www.musicconcourse.org/">music concourse</a></li>
 <li>Wander through <a href="http://www.golden-gate-park.com/">Golden Gate park</a></li>
 <li>Drive across the bridge, wander <a href="http://g.co/maps/hdhm4">Sausalito</a>, watch the sunset</li>
