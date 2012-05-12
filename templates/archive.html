@@ -21,9 +21,6 @@
   <body class="index">
     <xi:include href="button-bar.html" />
 
-    <py:if test="nextPage != ''"><div class="navwrapperl"><a class="nav" href="${nextPage}" title="Older Posts">&larr;</a></div></py:if>
-    <py:if test="previousPage != ''"><div class="navwrapperr"><a class="nav" href="${previousPage}" title="Newer Posts">&rarr;</a></div></py:if>
-
     <table id="posts" border="0" width="100%">
     <py:if test="showTitle">
     <tr>
@@ -41,16 +38,15 @@
         <td class="post">${Markup(content)}</td>
         <td></td>
     </tr>
+    <tr>
+        <td></td>
+        <td class="post">
+            <div style="text-align: center; font-size: 120%; margin-top: 10px;">
+                <a href="${blogurl}history">See Older Posts</a>
+            </div>
+        </td>
+        <td></td>
+    </tr>
     </table>
   </body>
-  <script type="text/javascript">
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-  try {
-  var pageTracker = _gat._getTracker("UA-86821-5");
-  pageTracker._setDomainName(".hortont.com");
-  pageTracker._trackPageview();
-  } catch(err) {}</script>
 </html>
