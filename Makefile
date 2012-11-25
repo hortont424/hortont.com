@@ -45,4 +45,8 @@ push:
 	cd /tmp ; git clone git@github.com:hortont424/hortont.com
 	cd /tmp/hortont.com ; make ; rsync -a --progress /tmp/hortont.com/output/ hortont@hortont.com:/srv/www
 
-.PHONY: all clean copy-data push all-serial
+preview:
+	open -a Safari.app http://localhost:12345
+	cd output/blog ; python -m SimpleHTTPServer 12345
+
+.PHONY: all clean copy-data push all-serial preview
