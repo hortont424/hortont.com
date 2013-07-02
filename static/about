@@ -4,13 +4,11 @@
     opacity: 1.0 !important;
 }
 </style>
-<h1>Who are ya?</h1>
+<h1>Who are you?</h1>
 <p>
 My <i>name</i> is Tim Horton (of no relation to
-the <a href="http://www.timhortons.com">fast-food chain</a>). I'm a recent graduate of <a href="http://www.rpi.edu">Rensselaer Polytechnic Institute</a>, in
-Troy, NY. I'm primarily a Mac user, but I dabble in whatever's necessary to do the job. I spend most of my free time either with a computer or a camera, programming, or taking pictures &mdash; <a href="http://developer.apple.com/cocoa/">Cocoa</a> and <a href="http://www.nikonusa.com/Find-Your-Nikon/ProductDetail.page?pid=25412">Nikon</a> being my preferences in those areas. I was a participant in <a href="http://code.google.com/soc/2008/">Google Summer of Code '08</a>; I spent my summer writing an engine allowing <a href="http://docs.enlightenment.org/api/evas/html/">Evas</a> to run natively under Mac OS X's rendering engine, Quartz. I returned again in 2009, this time working on 2.5D games for the <a href="http://www.gnome.org/projects/gnome-games/">Gnome Games</a> collection. I spent the summer of 2010 interning in San Diego, CA, at <a href="http://www.qualcomm.com/">Qualcomm, Inc.</a>, working on QChat and various supporting projects. I'm also a proponent of <a href="http://www.fsf.org/">free</a> and <a href="http://www.opensource.org/">open</a> licenses, placing most of my code under one of the various <a href="http://www.freebsd.org/copyright/freebsd-license.html">BSD-derived licenses</a> and many photographs and video under various <a href="http://creativecommons.org/">Creative Commons</a> licenses.
-</p>
-
+the <a href="http://www.timhortons.com">fast-food chain</a>). I'm a graduate of <a href="http://www.rpi.edu">Rensselaer Polytechnic Institute</a>, in
+Troy, NY. I'm primarily a Mac user, but I dabble in whatever's necessary to do the job. I spend most of my free time either with a computer or a camera, programming, or taking pictures. I work on WebKit most of the time now; in the past, I did lots of other <a href="http://github.com/hortont424/">random</a> <a href="/projects">things</a>.</p>
 <h1>What's this thing?</h1>
 <p>
 For a long while, I've been writing code, taking pictures, and thinking about things &mdash; creating lots of things that I really feel should be shared. I created this site as a means to that end, and, even if no one ever pays any attention, I've at least created an organized home for my ideas for <i>myself!</i> Everything here is here in a format that <i>I</i> understand, and you're all welcome to it. I'm willing to field questions, requests, hate mail, whatever, about anything on this site (or elsewhere!) through <a href="mailto:tim@hortont.com">email</a>, though I'll certainly not reply to everything!
