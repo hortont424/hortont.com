@@ -46,7 +46,7 @@ push:
 	cd /tmp/hortont.com ; make ; rsync -a --progress /tmp/hortont.com/output/ hortont@hortont.com:/srv/www
 
 preview:
-	open -a /Applications/Safari.app http://localhost:12345
-	cd output/blog ; python -m SimpleHTTPServer 12345
+	open -a /Applications/Safari.app http://localhost:12345/blog
+	cd output ; python -m SimpleHTTPServer 12345
 
 .PHONY: all clean copy-data push all-serial preview

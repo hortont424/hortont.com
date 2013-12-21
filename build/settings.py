@@ -5,9 +5,9 @@ page_size = 10
 www_prefix = "http://www.hortont.com/"
 static_prefix = "http://files.hortont.com/www/"
 
-if os.getcwd() == "/Users/hortont/Sites":
-    www_prefix = "http://localhost:8000/"
-    static_prefix = "http://localhost:8000/"
+if os.getcwd() == "/Users/hortont/src/hortont.com":
+    www_prefix = "http://localhost:12345/"
+    static_prefix = "http://localhost:12345/"
 
 blog_dir = "blog/"
 
