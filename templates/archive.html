@@ -9,17 +9,10 @@
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="${rssurl}" />
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Inconsolata" />
     <link href='http://fonts.googleapis.com/css?family=Hammersmith+One&amp;v2' rel='stylesheet' type='text/css' />
-
-    <style>
-        #blog
-        {
-            opacity: 1.0 !important;
-        }
-    </style>
     <title>${Markup(title)}</title>
   </head>
   <body class="index">
-    <xi:include href="button-bar.html" />
+    <xi:include py:with="currentPage='blog'" href="button-bar.html" />
 
     <table id="posts" border="0" width="100%">
     <py:if test="showTitle">

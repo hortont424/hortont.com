@@ -1,13 +1,18 @@
-<div id="buttonbar">
-    <table width="100%">
-        <tr align="center">
-            <td></td>
-            <td class="buttonCell"><a href="${blogurl}"><div id="blog" class="button">blog</div></a></td>
-            <td class="buttonCell"><a href="${blogurl}history"><div id="history" class="button">history</div></a></td>
-            <td class="buttonCell"><a href="${baseurl}projects"><div id="projects" class="button">projects</div></a><br/></td>
-            <td class="buttonCell"><a href="${baseurl}profiles.html"><div id="profiles" class="button">profiles</div></a></td>
-            <td class="buttonCell"><a href="${baseurl}about.html"><div id="about" class="button">about</div></a></td>
-            <td></td>
-        </tr>
-    </table>
-</div>
+<span>
+<style>
+#buttonbar-$currentPage {
+    color: #222;
+
+    -webkit-box-shadow: 0 0 20px #999;
+    -moz-box-shadow: 0 0 20px #999;
+    box-shadow: 0 0 20px #999;
+}
+</style>
+<ul class="buttonbar">
+    <li><a id="buttonbar-blog" href="${blogurl}">blog</a></li>
+    <li><a id="buttonbar-history" href="${blogurl}history">history</a></li>
+    <li><a id="buttonbar-projects" href="${baseurl}projects">projects</a></li>
+    <li><a id="buttonbar-profiles" href="${baseurl}profiles.html">profiles</a></li>
+    <li><a id="buttonbar-about" href="${baseurl}about.html">about</a></li>
+</ul>
+</span>

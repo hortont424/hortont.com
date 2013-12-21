@@ -1,7 +1,11 @@
 <style>
-#projects
-{
-    opacity: 1.0 !important;
+/* Ideally this would be passed in when we include the button bar. */
+#buttonbar-projects {
+    color: #222;
+
+    -webkit-box-shadow: 0 0 20px #999;
+    -moz-box-shadow: 0 0 20px #999;
+    box-shadow: 0 0 20px #999;
 }
 a.project
 {

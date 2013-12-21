@@ -1,4 +1,13 @@
 <style>
+/* Ideally this would be passed in when we include the button bar. */
+#buttonbar-profiles {
+    color: #222;
+
+    -webkit-box-shadow: 0 0 20px #999;
+    -moz-box-shadow: 0 0 20px #999;
+    box-shadow: 0 0 20px #999;
+}
+
 #profile
 {
     color: #999;
