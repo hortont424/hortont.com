@@ -9,6 +9,10 @@ if os.getcwd() == "/Users/hortont/src/hortont.com":
     www_prefix = "http://localhost:12345/"
     static_prefix = "http://localhost:12345/"
 
+if os.environ["NOPREFIX"]:
+    www_prefix = "/"
+    static_prefix = "/"
+
 blog_dir = "blog/"
 
 blog_prefix = www_prefix + blog_dir
