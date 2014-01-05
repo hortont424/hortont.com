@@ -49,4 +49,10 @@ preview:
 	open -a /Applications/Safari.app http://localhost:12345/blog
 	cd output ; python -m SimpleHTTPServer 12345
 
-.PHONY: all clean copy-data push all-serial preview
+deploy:
+	docker build -t hortont/hortontcom deploy/
+	docker push hortont/hortontcom
+	# do something to make EC2 pull
+	# do something at the end of the dockerfile to make it sure it updates git
+
+.PHONY: all clean copy-data push all-serial preview deploy
