@@ -52,6 +52,5 @@ preview:
 deploy:
 	docker build -t hortont/hortontcom deploy/
 	docker push hortont/hortontcom
-	# do something to make EC2 pull
 
 .PHONY: all clean copy-data push all-serial preview deploy
