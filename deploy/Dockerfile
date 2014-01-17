@@ -12,13 +12,10 @@ RUN mkdir -p /var/log/supervisor
 
 RUN git clone --depth 1 https://github.com/hortont424/hortont.com.git /var/www/hortont.com
 
-WORKDIR /var/www/hortont.com
-RUN NOPREFIX=1 make
-RUN chown -R www-data /var/www
-
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD supervisord.conf /etc/supervisor/supervisord.conf
 
 EXPOSE 80
 
-CMD ["/usr/bin/supervisord", "-n"]
+ADD startup.sh /var/tmp/startup.sh
+CMD ["/bin/bash", "/var/tmp/startup.sh"]
