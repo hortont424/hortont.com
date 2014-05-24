@@ -9,7 +9,7 @@ if os.getcwd() == "/Users/hortont/src/hortont.com":
     www_prefix = "http://localhost:12345/"
     static_prefix = "http://localhost:12345/"
 
-if os.environ["NOPREFIX"]:
+if "NOPREFIX" in os.environ and os.environ["NOPREFIX"]:
     www_prefix = "/"
     static_prefix = "/"
 
