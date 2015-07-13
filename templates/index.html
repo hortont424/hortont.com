@@ -15,11 +15,11 @@
     {
         position: absolute;
         top: 50%;
-        margin-top: -198px;
-        left: 50%;
-        margin-left: -338px;
-        height: 395px;
-        width: 675px;
+        margin-top: -200px;
+        left: 0;
+        right: 0;
+        height: 400px;
+        width: 100%;
     }
     #container a
     {
@@ -27,11 +27,11 @@
     }
     div.bigbutton
     {
-        margin: 20px 20px;
+        margin: 10px 20px;
         cursor: pointer;
         float: none !important;
-        display: inline-block;
         opacity: 0.8;
+        display: inline-block;
 
         width: 215px;
         height: 60px;
@@ -53,6 +53,7 @@
         overflow: hidden;
 
         -webkit-transition: opacity 0.25s ease-in-out, box-shadow .25s ease-in-out;
+        -webkit-font-smoothing: antialiased;
     }
     div.bigbutton:hover
     {
@@ -66,26 +67,25 @@
         position: absolute;
         top: 50%;
         margin-top: 225px;
-        left: 50%;
-        margin-left: -275px;
+        left: 0;
+        right: 0;
         height: 24px;
-        width: 550px;
+        width: 100%;
         color: #555;
+        -webkit-font-smoothing: antialiased;
     }
     </style>
   </head>
   <body class="index">
       <div id="container">
-      <a href="${blogurl}"><div class="bigbutton">blog</div></a>
+      <a href="${blogurl}"><div class="bigbutton">blog</div></a><br/>
       <a href="${blogurl}history"><div class="bigbutton">history</div></a><br/>
-      <a href="${baseurl}projects"><div class="bigbutton">projects</div></a>
-      <a href="http://planet.hortont.com/"><div class="bigbutton">planet</div></a><br/>
-      <a href="${baseurl}profiles.html"><div class="bigbutton">profiles</div></a>
+      <a href="${baseurl}projects"><div class="bigbutton">projects</div></a><br/>
       <a href="${baseurl}about.html"><div class="bigbutton">about</div></a>
       </div>
 
       <div id="footer">
-      &copy; 2013 &mdash; Tim Horton (<a href="mailto:tim@hortont.com">email</a>)
+      &copy; 2015 &mdash; <a href="mailto:tim@hortont.com">Tim Horton</a>
       </div>
   </body>
 </html>
