@@ -43,7 +43,7 @@ check-links:
 push:
 	rm -rf /tmp/hortont.com
 	cd /tmp ; git clone git@github.com:hortont424/hortont.com
-	cd /tmp/hortont.com ; make ; rsync -a --progress /tmp/hortont.com/output/ hortont@hortont.com:/srv/www
+	cd /tmp/hortont.com ; make ; rsync -a --progress /tmp/hortont.com/output/ thorton@hortont.com:/srv/www
 
 preview:
 	open -a /Applications/Safari.app http://localhost:12345/blog
