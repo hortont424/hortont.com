@@ -2,10 +2,9 @@
 /* Ideally this would be passed in when we include the button bar. */
 #buttonbar-about {
     color: #222;
-
-    -webkit-box-shadow: 0 0 20px #999;
-    -moz-box-shadow: 0 0 20px #999;
-    box-shadow: 0 0 20px #999;
+    -webkit-box-shadow: 0 0 20px #777;
+    -moz-box-shadow: 0 0 20px #777;
+    box-shadow: 0 0 20px #777;
 }
 </style>
 <h1>Who are you?</h1>
