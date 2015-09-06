@@ -4,10 +4,12 @@ page_size = 10
 
 www_prefix = "http://www.hortont.com/"
 static_prefix = "http://files.hortont.com/www/"
+photos_prefix = "http://photos.hortont.com/"
 
-if os.getcwd() == "/Users/hortont/src/hortont.com":
+if os.getcwd() == "/Users/hortont/src/hortont.com" or os.getcwd() == "/Users/thorton/src/hortont.com":
     www_prefix = "http://localhost:12345/"
     static_prefix = "http://localhost:12345/"
+    photos_prefix = "http://localhost:8080/"
 
 if "NOPREFIX" in os.environ and os.environ["NOPREFIX"]:
     www_prefix = "/"

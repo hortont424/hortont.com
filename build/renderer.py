@@ -89,7 +89,8 @@ def renderPost(f, template, rss=False):
     return tmpl.generate(post=metadata,
                          baseurl=www_prefix,
                          staticurl=static_prefix,
-                         blogurl=blog_prefix).render(postfix, doctype=doctype)
+                         blogurl=blog_prefix,
+                         photosurl=photos_prefix).render(postfix, doctype=doctype)
 
 def renderArchive(c, template, next, prev, rss=False, category=None):
     postfix = doctype = "html"
@@ -114,6 +115,7 @@ def renderArchive(c, template, next, prev, rss=False, category=None):
                          baseurl=www_prefix,
                          staticurl=static_prefix,
                          blogurl=blog_prefix,
+                         photosurl=photos_prefix,
                          nextPage=next,
                          previousPage=prev,
                          buildDate=buildDate,
@@ -132,5 +134,6 @@ def renderHistory(c, template):
                          baseurl=www_prefix,
                          staticurl=static_prefix,
                          blogurl=blog_prefix,
+                         photosurl=photos_prefix,
                          buildDate=buildDate,
                          title=title).render(postfix, doctype=doctype)
