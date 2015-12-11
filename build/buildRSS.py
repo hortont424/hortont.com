@@ -29,7 +29,7 @@ def generateRSSFeed(posts, outputFilename, category=None):
         os.makedirs(os.path.dirname(outputFilename))
 
     out = codecs.open(outputFilename, encoding='utf-8', mode='w+')
-    out.write(page.decode("utf-8", "ignore"))
+    out.write(page)
     out.close()
 
     #htaccess = os.path.join(os.path.dirname(outputFilename), ".htaccess")

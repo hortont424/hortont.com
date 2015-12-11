@@ -111,7 +111,7 @@ def renderArchive(c, template, next, prev, rss=False, category=None):
         rssurl = blog_prefix + "/topics/" + category + "/feed/rss.xml"
 
     tmpl = loader.load(template + '.' + postfix, encoding='utf-8')
-    return tmpl.generate(content=c.decode("utf-8","ignore"),
+    return tmpl.generate(content=c,
                          baseurl=www_prefix,
                          staticurl=static_prefix,
                          blogurl=blog_prefix,

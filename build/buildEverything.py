@@ -31,10 +31,10 @@ def generateArchive(posts, outputLocation, category=None):
         os.makedirs(os.path.dirname(outputFilename))
 
     out = codecs.open(outputFilename, encoding='utf-8', mode='w+')
-    out.write(page.decode("utf-8", "ignore"))
+    out.write(page)
     out.close()
     out = codecs.open(secondOutputFilename, encoding='utf-8', mode='w+')
-    out.write(page.decode("utf-8", "ignore"))
+    out.write(page)
     out.close()
     print outputFilename.replace(os.path.join("output", ""), "") + " (all, %(s)d bytes)" % {'s': os.stat(outputFilename).st_size}
 
