@@ -2,9 +2,9 @@ import os
 
 page_size = 10
 
-www_prefix = "http://www.hortont.com/"
-static_prefix = "http://files.hortont.com/www/"
-photos_prefix = "http://photos.hortont.com/"
+www_prefix = "//www.hortont.com/"
+static_prefix = "//files.hortont.com/www/"
+photos_prefix = "//photos.hortont.com/"
 
 if os.getcwd() == "/Users/hortont/src/hortont.com" or os.getcwd() == "/Users/thorton/src/hortont.com":
     www_prefix = "http://localhost:12345/"
