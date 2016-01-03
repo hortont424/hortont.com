@@ -85,6 +85,22 @@ def renderPost(f, template, rss=False):
         postfix = "xml"
         doctype = None
 
+    metas = []
+    metas.append({"property": "og:title", "value": metadata["title"]})
+    metas.append({"property": "og:site_name", "value": u"hortont • blog"})
+    metas.append({"property": "og:locale", "value": "en-US"})
+    metas.append({"property": "og:url", "value": metadata["guid"]})
+    metas.append({"property": "og:type", "value": "article"})
+    metas.append({"property": "author", "value": "Tim Horton"})
+
+    if "summary" in metadata:
+        metas.append({"property": "og:description", "value": metadata["summary"]})
+
+    if "summaryImage" in metadata:
+        metas.append({"property": "og:image", "value": metadata["summaryImage"]})
+
+    metadata["metas"] = metas
+
     tmpl = loader.load(metadata["template"] + '.' + postfix, encoding='utf-8')
     return tmpl.generate(post=metadata,
                          baseurl=www_prefix,
