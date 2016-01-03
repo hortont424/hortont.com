@@ -66,11 +66,19 @@ def renderPost(f, template, rss=False):
     if "pubDate" not in metadata:
         metadata["pubDate"] = datetime.datetime.strptime(pubDate, "%Y.%m.%d %H:%M:%S").strftime("%a, %d %b %Y %H:%M:%S +0000")
 
+
+    usingImplicitGUID = False
     if "guid" not in metadata:
         metadata["guid"] = metadata["url"]
-        # Very roughly handle relative URLs
-        if metadata["guid"].startswith("//"):
-            metadata["guid"] = "http:" + metadata["guid"]
+        usingImplicitGUID = True
+
+    # Very roughly handle relative URLs
+    if metadata["guid"].startswith("//"):
+        metadata["guid"] = "http:" + metadata["guid"]
+
+    canonicalURL = metadata["guid"]
+    if usingImplicitGUID:
+        canonicalURL += "/"
 
     if "noChrome" not in metadata:
         metadata["noChrome"] = 0
@@ -92,7 +100,7 @@ def renderPost(f, template, rss=False):
     metas.append({"property": "og:title", "value": metadata["title"]})
     metas.append({"property": "og:site_name", "value": u"hortont • blog"})
     metas.append({"property": "og:locale", "value": "en-US"})
-    metas.append({"property": "og:url", "value": metadata["guid"]})
+    metas.append({"property": "og:url", "value": canonicalURL})
     metas.append({"property": "og:type", "value": "article"})
     metas.append({"property": "author", "value": "Tim Horton"})
 
