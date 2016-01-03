@@ -68,6 +68,9 @@ def renderPost(f, template, rss=False):
 
     if "guid" not in metadata:
         metadata["guid"] = metadata["url"]
+        # Very roughly handle relative URLs
+        if metadata["guid"].startswith("//"):
+            metadata["guid"] = "http:" + metadata["guid"]
 
     if "noChrome" not in metadata:
         metadata["noChrome"] = 0
