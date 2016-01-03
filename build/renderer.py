@@ -103,6 +103,8 @@ def renderPost(f, template, rss=False):
     metas.append({"property": "og:url", "value": canonicalURL})
     metas.append({"property": "og:type", "value": "article"})
     metas.append({"property": "author", "value": "Tim Horton"})
+    metas.append({"property": "twitter:creator", "value": "@hortont424"})
+    metas.append({"property": "article:author", "value": "https://www.facebook.com/hortont"})
 
     if "summary" in metadata:
         metas.append({"property": "og:description", "value": metadata["summary"]})
