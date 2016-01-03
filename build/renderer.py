@@ -99,7 +99,7 @@ def renderPost(f, template, rss=False):
     metas = []
     metas.append({"property": "og:title", "value": metadata["title"]})
     metas.append({"property": "og:site_name", "value": u"hortont • blog"})
-    metas.append({"property": "og:locale", "value": "en-US"})
+    metas.append({"property": "og:locale", "value": "en_US"})
     metas.append({"property": "og:url", "value": canonicalURL})
     metas.append({"property": "og:type", "value": "article"})
     metas.append({"property": "author", "value": "Tim Horton"})
