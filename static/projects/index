@@ -14,20 +14,20 @@ a.project
 <h1>Code</h1>
 <p>
 <b>Active</b><br/>
-<a class="project" href="http://www.hortont.com/projects/website/">hortont.com</a> &mdash; the array of Python scripts which generate this website<br/>
+<a class="project" href="https://www.hortont.com/projects/website/">hortont.com</a> &mdash; the array of Python scripts which generate this website<br/>
 </p>
 <p>
 <b>Unmaintained</b><br/>
 <a class="project" href="http://notebook.hortont.com/">Notebook</a> &mdash; an inline, pluggable, Cocoa-based REPL<br/>
-<a class="project" href="http://www.hortont.com/projects/seed/">libseed</a> &mdash; JavaScript bindings for the Gnome platform<br/>
-<a class="project" href="http://www.hortont.com/projects/gnome-games/">Gnome Games</a> &mdash; Clutter-based Seed ports of Lights Off, Same Gnome, and Mines<br/>
-<a class="project" href="http://www.hortont.com/projects/epiphany-extensions/">Epiphany Extensions</a> &mdash; a variety of Epiphany 2.28+ extensions, in Seed<br/>
-<a class="project" href="http://www.hortont.com/projects/sheeple/">Sheeple</a> &mdash; a Gtk+ contact management program, backed by evolution-data-server<br/>
+<a class="project" href="https://www.hortont.com/projects/seed/">libseed</a> &mdash; JavaScript bindings for the Gnome platform<br/>
+<a class="project" href="https://www.hortont.com/projects/gnome-games/">Gnome Games</a> &mdash; Clutter-based Seed ports of Lights Off, Same Gnome, and Mines<br/>
+<a class="project" href="https://www.hortont.com/projects/epiphany-extensions/">Epiphany Extensions</a> &mdash; a variety of Epiphany 2.28+ extensions, in Seed<br/>
+<a class="project" href="https://www.hortont.com/projects/sheeple/">Sheeple</a> &mdash; a Gtk+ contact management program, backed by evolution-data-server<br/>
 </p>
 <h1>Art</h1>
 <p>
-<a class="project" href="http://www.hortont.com/projects/egd/">Experimental Game Design</a> &mdash; three games designed and implemented during senior year<br/>
-<a class="project" href="http://www.hortont.com/projects/intermediate-video/">Intermediate Video</a> &mdash; three short video projects from my junior year video class<br/>
+<a class="project" href="https://www.hortont.com/projects/egd/">Experimental Game Design</a> &mdash; three games designed and implemented during senior year<br/>
+<a class="project" href="https://www.hortont.com/projects/intermediate-video/">Intermediate Video</a> &mdash; three short video projects from my junior year video class<br/>
 <a class="project" href="http://www.hortont.com/projects/typography/">Typography</a> &mdash; various design projects from my junior year typography class<br/>
 <a class="project" href="http://apad.hortont.com/">APAD</a> &mdash; a photo a day for the entirety of 2007<br/>
 </p>
