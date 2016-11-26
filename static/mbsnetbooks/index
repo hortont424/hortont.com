@@ -7,13 +7,13 @@ The below is a relatively disjointed rant about what we did over the course of t
 <b>Useful Files</b>
 <ul>
     <li>The <a href="http://www.microsoft.com/downloads/details.aspx?familyid=696DD665-9F76-4177-A811-39C26D3B3B34&displaylang=en">Windows Automated Installation Kit</a> is vital to the process, as it includes the answers file editor. Download it, pop in a blank DVD (won't fit on a CD), right click (on a Windows 7 machine), and click "Burn image to disc" (on XP, you'll have to find a different tool to burn ISO images, you're on your own). MBS theoretically has a copy of this CD if you need it.</li>
-    <li>It's 2010. Video drivers are nice. The GMA500 drivers (for the Dell Mini 10) are theoretically available <a href="http://support.dell.com/support/downloads/download.aspx?c=us&l=en&s=gen&releaseid=R201458&SystemID=INSPIRON1210&servicetag=&os=WLH&osl=en&deviceid=18334&devlib=0&typecnt=0&vercnt=1&catid=-1&impid=-1&formatcnt=0&libid=6&typeid=-1&dateid=-1&formatid=-1&source=-1&fileid=279795">here</a>. Don't be scared away by the different model numbers (945/965) in the description; Intel went crazy with the naming for Poulsbo. I had trouble downloading this file on the school machines, so there's a mirror up <a href="http://files.hortont.com/mbsnetbooks/gma500-mini10.exe">here</a>, which is up-to-date as of May 22, 2010 (yell at me if there's a newer version, I'll update this).</li>
+    <li>It's 2010. Video drivers are nice. The GMA500 drivers (for the Dell Mini 10) are theoretically available <a href="http://support.dell.com/support/downloads/download.aspx?c=us&l=en&s=gen&releaseid=R201458&SystemID=INSPIRON1210&servicetag=&os=WLH&osl=en&deviceid=18334&devlib=0&typecnt=0&vercnt=1&catid=-1&impid=-1&formatcnt=0&libid=6&typeid=-1&dateid=-1&formatid=-1&source=-1&fileid=279795">here</a>. Don't be scared away by the different model numbers (945/965) in the description; Intel went crazy with the naming for Poulsbo. I had trouble downloading this file on the school machines, so there's a mirror up <a href="https://files.hortont.com/mbsnetbooks/gma500-mini10.exe">here</a>, which is up-to-date as of May 22, 2010 (yell at me if there's a newer version, I'll update this).</li>
 </ul>
 <b>On Sysprep</b>
 
 The Windows Automated Installation Kit (download link is up in "Useful Files") is useful here. Download it, burn a copy onto a DVD, install it on a machine you're comfortable using. It can be any machine, but preferably one with a CD drive.
 
-<img src="http://files.hortont.com/mbsnetbooks/sim.gif" />
+<img src="https://files.hortont.com/mbsnetbooks/sim.gif" />
 
 You want to run the "Windows System Image Manager" tool. You should see a UI similar to the above image; ignore the "Distribution Share" and "Messages" panes; the other three panes are where all the action is. Insert a real Windows 7 DVD into your drive, then right click on the item at the top of the bottom right pane ("Windows Image" in the image above). Navigate to your Windows 7 DVD in the file browser that appears, finding the file "sources/install_windows 7 professional.clg" and selecting it. You should now see a bunch of stuff load there. Expand the "Components" item in the Windows Image pane, and see lots of components!
 
@@ -25,7 +25,7 @@ You can drag components from the Windows Image pane to the Answer File pane, dro
 
 Google. Is. Your. Friend.
 
-The sysprep answers file that we created for MBS's Windows 7 netbooks (the Dell Mini 10s) is <a href="http://files.hortont.com/mbsnetbooks/mini10.xml">here</a>. Passwords and CD keys have been removed, you'll have to fill them back in, <em>carefully</em>. (or, find the file with them still in place in <em>Support/Ghost/Ghost 2.5.1/newsysprep</em>) The CD key goes two places:
+The sysprep answers file that we created for MBS's Windows 7 netbooks (the Dell Mini 10s) is <a href="https://files.hortont.com/mbsnetbooks/mini10.xml">here</a>. Passwords and CD keys have been removed, you'll have to fill them back in, <em>carefully</em>. (or, find the file with them still in place in <em>Support/Ghost/Ghost 2.5.1/newsysprep</em>) The CD key goes two places:
 <ul>
     <li>windowsPE/Microsoft-Windows-Setup/UserData/ProductKey</li>
     <li>oobeSystem/Microsoft-Windows-Shell-Setup/FirstLogonCommands/SynchronousCommand[order=1]/Commandline (at the end of the command line)</li>

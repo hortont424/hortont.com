@@ -15,33 +15,33 @@ function go(camera)
 }
 </script>
 <audio id="retina" preload="auto">
-<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Retina.mp3" />
-<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Retina.ogg" /></audio>
+<source type="audio/mpeg" src="https://files.hortont.com/camera-sounds/Retina.mp3" />
+<source type="audio/ogg" src="https://files.hortont.com/camera-sounds/Retina.ogg" /></audio>
 <audio id="d7000" preload="auto">
-<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/D7000.mp3" />
-<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/D7000.ogg" /></audio>
+<source type="audio/mpeg" src="https://files.hortont.com/camera-sounds/D7000.mp3" />
+<source type="audio/ogg" src="https://files.hortont.com/camera-sounds/D7000.ogg" /></audio>
 <audio id="exa" preload="auto">
-<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Exa.mp3" />
-<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Exa.ogg" /></audio>
+<source type="audio/mpeg" src="https://files.hortont.com/camera-sounds/Exa.mp3" />
+<source type="audio/ogg" src="https://files.hortont.com/camera-sounds/Exa.ogg" /></audio>
 <audio id="exacta" preload="auto">
-<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Exacta.mp3" />
-<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Exacta.ogg" /></audio>
+<source type="audio/mpeg" src="https://files.hortont.com/camera-sounds/Exacta.mp3" />
+<source type="audio/ogg" src="https://files.hortont.com/camera-sounds/Exacta.ogg" /></audio>
 <audio id="nikkormat" preload="auto">
-<source type="audio/mpeg" src="http://files.hortont.com/camera-sounds/Nikkormat.mp3" />
-<source type="audio/ogg" src="http://files.hortont.com/camera-sounds/Nikkormat.ogg" /></audio>
+<source type="audio/mpeg" src="https://files.hortont.com/camera-sounds/Nikkormat.mp3" />
+<source type="audio/ogg" src="https://files.hortont.com/camera-sounds/Nikkormat.ogg" /></audio>
 <strong>Kodak Retina</strong>
 
-<a href="javascript:go('retina')"><img src="http://files.hortont.com/camera-sounds/retina.jpg" /></a>
+<a href="javascript:go('retina')"><img src="https://files.hortont.com/camera-sounds/retina.jpg" /></a>
 
 <strong>Ihagee Exa</strong>
 
-<a href="javascript:go('exa')"><img src="http://files.hortont.com/camera-sounds/exa.jpg" /></a>
+<a href="javascript:go('exa')"><img src="https://files.hortont.com/camera-sounds/exa.jpg" /></a>
 
 <strong>Ihagee Exacta</strong>
 
-<a href="javascript:go('exacta')"><img src="http://files.hortont.com/camera-sounds/exacta.jpg" /></a>
+<a href="javascript:go('exacta')"><img src="https://files.hortont.com/camera-sounds/exacta.jpg" /></a>
 
 And my normal trusty companions, for good measure:
 
-<a href="javascript:go('d7000')"><img src="http://files.hortont.com/camera-sounds/d7000.jpg" /></a>
-<a href="javascript:go('nikkormat')"><img src="http://files.hortont.com/camera-sounds/nikkormat.jpg" /></a>
+<a href="javascript:go('d7000')"><img src="https://files.hortont.com/camera-sounds/d7000.jpg" /></a>
+<a href="javascript:go('nikkormat')"><img src="https://files.hortont.com/camera-sounds/nikkormat.jpg" /></a>

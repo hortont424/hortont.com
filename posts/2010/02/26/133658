@@ -2,15 +2,15 @@ Last semester, during <a href="http://www.hortont.com/blog/on-rcos-or-open-softw
 
 The de-facto application for managing contacts on GNOME at the moment is, of course, the behemoth personal-information-management suite, Evolution. Evolution has a <em>long</em> history, and is a large codebase, written by a lot of people, over a very long time. It also looks a little bit outdated:
 
-<a href="http://files.hortont.com/projects/sheeple-evolution-contacts.png"><img width="600px" src="http://files.hortont.com/projects/sheeple-evolution-contacts.png" /></a>
+<a href="https://files.hortont.com/projects/sheeple-evolution-contacts.png"><img width="600px" src="https://files.hortont.com/projects/sheeple-evolution-contacts.png" /></a>
 
 Not a pretty sight. Not to me, anyway, not in 2010, when my alternative is:
 
-<img width="600px" src="http://files.hortont.com/projects/sheeple-ab-contacts.png" />
+<img width="600px" src="https://files.hortont.com/projects/sheeple-ab-contacts.png" />
 
 Another fundamental difference between the two is in their editing functionality. Address Book provides the ability to edit contacts inline; Evolution requires you to edit contact information in an overly-limited (while it can store more than four email addresses per contact, you can only edit four in the editor window... what!?) separate window.
 
-<img width="600px" src="http://files.hortont.com/projects/sheeple-ab-editing.png" />
+<img width="600px" src="https://files.hortont.com/projects/sheeple-ab-editing.png" />
 
 I decided to start working on a more Address Book-like application for GNOME. After a bit of deliberation, I decided to have it backed by Evolution's evolution-data-server, so that people's contacts would transition over smoothly. This might have been a mistake, because the EDS API isn't beautiful, and there are very few complete, working bindings, but I've made it mostly work.
 
@@ -20,7 +20,7 @@ During the development, I discovered that Nokia was developing libosso-abook (fo
 
 After the end of last semester, I had the following:
 
-<a href="http://files.hortont.com/projects/sheeple-editor.png"><img width="600px" src="http://files.hortont.com/projects/sheeple-editor.png" /></a>
+<a href="https://files.hortont.com/projects/sheeple-editor.png"><img width="600px" src="https://files.hortont.com/projects/sheeple-editor.png" /></a>
 
 Lots of things are broken, but it's something. I don't have working syncing yet, and I believe <em>writing</em> back to EDS is broken at the moment (so no persistence of changes!), but those are things I plan on working on this semester...
 

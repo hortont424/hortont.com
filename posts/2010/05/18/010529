@@ -1,16 +1,16 @@
 Since the semester's over, and I've got a week until work starts (I'm flying to San Diego on Saturday), I spent a little bit of time working on a tiny Cocoa program Nate had been writing:
 
-<img src="http://files.hortont.com/averagelapse-init2.png" />
+<img src="https://files.hortont.com/averagelapse-init2.png" />
 
 It's a very simple program called AverageLapse, which takes a sequence of images (or, alternatively, a video that Quicktime can decode) and outputs the running average at each frame as a JPEG. It's also very parallelizable — I took this opportunity to play with <a href="http://libdispatch.macosforge.org/">libdispatch</a> for the first time, which was neat!
 
 For example, here's a frame from a timelapse (from <a href="http://www.openfootage.net/?p=163">OpenFootage</a>):
 
-<img src="http://files.hortont.com/averagelapse-frame.jpg" />
+<img src="https://files.hortont.com/averagelapse-frame.jpg" />
 
 This turns into the following video (if the HTML5 video below doesn't work in your browser, it's on <a href="http://www.youtube.com/watch?v=hYqBQuNq1ME">YouTube</a> too):
 
-<video width="100%" controls="controls" src="http://files.hortont.com/averagelapse-sunset.mov"></video>
+<video width="100%" controls="controls" src="https://files.hortont.com/averagelapse-sunset.mov"></video>
 
 If you want to try it out and you're feeling experimental, check out the code from <a href="http://github.com/NateStedman/Average-Lapse">GitHub</a>. Otherwise, I'll make a post with a 10.6-only binary later in the week.
 

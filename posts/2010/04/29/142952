@@ -8,7 +8,7 @@ For Typography, I've been working on the <a href="http://github.com/hortont424/p
 
 For Parallel Programming, I've been working on a <a href="http://github.com/hortont424/orbitals">atomic orbital simulation</a>, using OpenCL to evaluate the electron probability density function for a hydrogen atom at many, many points. It makes nice smooth images like this:
 
-<img src="http://files.hortont.com/projects/orbitals/320orbitals.png">
+<img src="https://files.hortont.com/projects/orbitals/320orbitals.png">
 
 It's showing approximately a 20x speedup, moving from Zoe's CPU to GPU (Core i7 @ 2x2.66/3.33GHz to a NVIDIA GeForce 330M GT). The move from Zoe's CPU to Jayne's GPU (the 4890) is even more awesome; it's something like 40x faster!
 
@@ -20,13 +20,13 @@ For Advanced Computer Graphics, I've been working on a <a href="http://github.co
 
 I don't have any really interesting examples to show now, because I <em>just</em> got emitters to work. Below is a picture of something like 1,000,000 particles being blown away from the origin by two "simple"-type forces (they just push outward from a point, with inverse-square falloff).
 
-<img src="http://files.hortont.com/particles/mega2.png">
+<img src="https://files.hortont.com/particles/mega2.png">
 
 And a video (which will only work if you're using a very recent Chrome or Safari, probably) of the same simulation, though with only 128K points. This simulation really isn't interesting because there's nothing complicated going on. I've got gravity working, which is a gazillion times more interesting and more complicated, but I'll post pictures and video of that some other day (it's also much, much slower).
 
 It also turns out that the overhead of OpenCL isn't worth it for simple forces; it significantly speeds up complex (O(n^2)) forces like gravity (I'm aware of many ways to speed up n-body simulation, I just haven't had a chance to implement them yet), but for O(n) forces like below, it really only provides a tiny-to-near-zero gain.
 
-<video src="http://files.hortont.com/particles/simple.mov" controls="controls" width="600px"></video>
+<video src="https://files.hortont.com/particles/simple.mov" controls="controls" width="600px"></video>
 
 <b>Sheeple</b>
 

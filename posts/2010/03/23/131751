@@ -16,7 +16,7 @@ This time around, I didn't really see repair as an option. While Apple now has a
 
 On Sunday I stripped the MacBook Pro down, disconnecting everything from the motherboard, removing it, applying heat from a hairdryer and massaging the GPU... I figured, at this point, I've got nothing to lose, so I'll try it. I had to reapply thermal paste and reattach the heatsink, all that fun stuff. After reconnecting everything, no dice. I offered bits and pieces to other people (battery and memory are still useful), and put Kaylee in a box.
 
-<img src="http://files.hortont.com/nvidia-mbp-gpu.jpg" />
+<img src="https://files.hortont.com/nvidia-mbp-gpu.jpg" />
 
 Monday rolled around, and my father pointed out that BGA solder doesn't actually melt at a temperature that you can achieve with a hairdryer, but that an oven at around 400&deg;F should do it... so I decided that I'd try that as a last-ditch attempt.
 
