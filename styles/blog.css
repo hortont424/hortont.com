@@ -49,3 +49,7 @@ p.commentLink
     text-align: right;
     font-weight: bold;
 }
+
+@media (prefers-color-scheme: dark) {
+
+}

@@ -149,3 +149,45 @@ pre
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
 }
+
+@media (prefers-color-scheme: dark) {
+    body
+    {
+        background-color: #222;
+    }
+
+    h1, h1>a
+    {
+        color: #ddd;
+    }
+
+    div.postContent
+    {
+        color: #eee;
+        background-color: #333;
+    }
+
+    ul.buttonbar > li > a
+    {
+        color: #7c7c7c;
+
+        border: 2px solid #928E8C;
+
+        background: -webkit-linear-gradient(bottom, #3e3e3e 0, #141414 50%, #333333 50%, #5d5d5d 100%);
+        background: -moz-linear-gradient(bottom, #3e3e3e 0, #141414 50%, #333333 50%, #5d5d5d 100%);
+        background: -o-linear-gradient(bottom, #3e3e3e 0, #141414 50%, #333333 50%, #5d5d5d 100%);
+
+        -webkit-box-shadow: 0 0 10px #111;
+        -moz-box-shadow: 0 0 10px #111;
+        box-shadow: 0 0 10px #111;
+    }
+
+    ul.buttonbar > li > a:hover
+    {
+        color: #c4c4c4;
+
+        -webkit-box-shadow: 0 0 20px #000;
+        -moz-box-shadow: 0 0 20px #000;
+        box-shadow: 0 0 20px #000;
+    }
+}

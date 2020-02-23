@@ -6,6 +6,11 @@
     -moz-box-shadow: 0 0 20px #777;
     box-shadow: 0 0 20px #777;
 }
+@media (prefers-color-scheme: dark) {
+    #buttonbar-about {
+        color: #c4c4c4;
+    }
+}
 </style>
 <h1>Who are you?</h1>
 <p>
